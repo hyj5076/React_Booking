@@ -10,16 +10,16 @@ function Main() {
 
             <div className="main_part">
                 <ul className="max_inner">
-                    <li className="active"><a href="index.html">개인</a></li>
-                    <li><a href="index0.html">단체</a></li>
-                    <li><a href="index1.html">글램핑</a></li>
+                    <li className="active"><button href="index.html">개인</button></li>
+                    <li><button href="index0.html">단체</button></li>
+                    <li><button href="index1.html">글램핑</button></li>
                 </ul>
             </div>
 
             <div className="booking">
                 <div className="inner">
                     <div className="btn">
-                        <a href="sub/room_1reserv_1.2.html">예약하기</a>
+                        <button href="sub/room_1reserv_1.2.html">예약하기</button>
                     </div>
                 </div>
             </div>
