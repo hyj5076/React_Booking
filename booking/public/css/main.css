@@ -61,6 +61,13 @@ i {
     font-size: 3rem;
 }
 
+button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 0;
+}
+
 
 /* ==========================================================================
     2.Interactive
@@ -342,14 +349,14 @@ i {
     border-right: 0;
 }
 
-.main_part > ul > li > a {
+.main_part > ul > li > button {
     display: block;
     color: #fff;
     padding: 5px 0;
     width: 100%;
 }
 
-.main_part > ul > li.active > a {
+.main_part > ul > li.active > button {
     border: rgba(255,255,255,0.6) 1px solid;
 }
 
@@ -421,7 +428,8 @@ i {
 }
 
 .content_img > div > img {
-    width: 100%; height: auto;
+    width: 100%; 
+    height: auto;
     object-fit: cover;
 }
 
