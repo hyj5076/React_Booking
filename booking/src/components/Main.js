@@ -1,4 +1,5 @@
 import './App.css';
+import './Main.css';
 import { useState } from 'react';
 import contentData from '../MainContentsList.json';
 

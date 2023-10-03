@@ -1,0 +1,151 @@
+/* =================================================
+    7.Main 
+   =================================================
+*/
+
+/* ------------------------------------------------- 
+    메인 비주얼 main_visual
+   ------------------------------------------------- */
+
+   .main_img {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.main_img > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.main_part {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.main_part > ul {
+    display: flex;
+    width: 100%;
+}
+
+.main_part > ul > li {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    border-right: rgba(255,255,255,0.6) 1px solid;
+    padding: 5px;
+}
+
+.main_part > ul > li:last-child {
+    border-right: 0;
+}
+
+.main_part > ul > li > button {
+    display: block;
+    color: #fff;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.main_part > ul > li.active > button {
+    border: rgba(255,255,255,0.6) 1px solid;
+}
+
+.booking .btn > a {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    border: #000 1px solid;
+}
+
+/* ------------------------------------------------- 
+    [메인] 상단 콘텐츠 타이틀
+   ------------------------------------------------- */
+
+#main_content {
+    margin: 80px 0 40px;
+}
+
+.main_headline {
+    position: relative;
+}
+
+.main_headline h2 {
+    font-size: 3rem;
+    background: #fff;
+    position: absolute;
+    padding-right: 5px;
+    z-index: 9;
+}
+
+    .m_line {
+        border-top: #d2d2d2 1px solid;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+        z-index: 7;
+    }
+
+.main_txt {
+    padding: 50px 0 10px;
+}
+
+.main_txt > p > a {
+    display: inline;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------------- 
+    [메인] 하위 콘텐츠 타이틀 및 내용
+   ------------------------------------------------- */
+
+.content_title > div {
+    margin-top: 20px;
+    width: 100%;
+    border: #000 1px solid;
+    border-bottom: 0;
+    padding: 20px;
+}
+
+.content_title > div > h3 {
+    font-size: 3rem;
+}
+
+.content_img > div {
+    width: 100%;
+}
+
+.content_img > div > img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.content_img .more {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    z-index: 99;
+    translate: -10px -50px;
+}
+
+.content_img .more a {
+    font-weight: 400;
+    width: 250px;
+    padding: 10px 0;
+    border: #fff 1px solid;
+    color: #fff;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.content_img .more a:hover  {
+    background: rgba(255,255,255,0.8);
+    color: #000;
+}

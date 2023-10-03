@@ -1,5 +1,6 @@
+import '../App.css';
+import './Nav.css';
 import { Link } from 'react-router-dom';
-import './App.css';
 
 function Nav() {
   return (
@@ -7,7 +8,7 @@ function Nav() {
         <div className="nav_header">
             <div className="inner spacebetween">
                 <p className="back"><a href=""><i className="bi bi-arrow-left-short"></i></a></p>
-                <h1><Link to="/"><img src="images/logo_white.png" alt="로고" /></Link></h1>
+                <h1><Link to="/"><img src="/images/logo_white.png" alt="로고" /></Link></h1>
                 <p className="close"><a href="#"><i className="bi bi-x"></i></a></p>
             </div>
         </div>

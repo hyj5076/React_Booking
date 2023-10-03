@@ -1,10 +1,11 @@
-import './App.css';
+import '../App.css';
+import './Footer.css'
 
 function Footer() {
   return (
     <div id="footer">
         <div className="footer_h1 max_inner">
-            <img src="images/logo.png" alt="푸터로고" />
+            <img src="/images/logo.png" alt="푸터로고" />
             <p>에잇포레 리조트&글램핑</p>
         </div>
 
@@ -19,14 +20,14 @@ function Footer() {
 
             <div className="gnb">
                 <ul>
-                    <li><a href="">고객센터</a></li>
-                    <li><a href="">웹사이트이용약관</a></li>
-                    <li><a href="">이메일무단수집금지</a></li>
+                    <li><button>고객센터</button></li>
+                    <li><button>웹사이트이용약관</button></li>
+                    <li><button>이메일무단수집금지</button></li>
                 </ul>
                 <ul>
-                    <li><a href="">영상정보처리기기운영·관리방침</a></li>
-                    <li><a href="">개인정보처리방침</a></li>
-                    <li><a href="">호텔정책</a></li>
+                    <li><button>영상정보처리기기운영·관리방침</button></li>
+                    <li><button>개인정보처리방침</button></li>
+                    <li><button>호텔정책</button></li>
                 </ul>
             </div>
         </div>

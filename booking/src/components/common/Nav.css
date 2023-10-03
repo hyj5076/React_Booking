@@ -1,0 +1,143 @@
+/* ==================================================
+    5.Nav 
+   ==================================================
+*/
+
+.nav {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: var(--medium);
+    background-color: #fff;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.nav a {
+    color: #333;
+}
+
+.nav_title {
+    background: #eee;
+}
+
+.nav_title h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav_header {
+    width: 100%;
+    background-color: #333;
+    border-bottom: #eee 1px solid;
+}
+
+    .close i {
+        color: var(--navgray);
+        font-size: var(--largeicon);
+    }
+
+    .back i {
+        color: var(--navgray);
+        font-size: var(--largeicon);
+    }
+
+.nav_title > ul {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: var(--navgray) 1px solid;
+    justify-content: center;
+}
+
+    .border-right {
+        border-right: rgba(0,0,0,0.4) 1px solid;
+    }
+
+.nav_title > ul > li {
+    width: calc(100%/3);
+    text-align: center;
+}
+
+.nav_title li a {
+    padding: 10px 0;
+}
+
+.nav_login {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav_login a {
+    padding: 5px 0;
+    border-radius: 50px;
+    width: 120px;
+    text-align: center;
+    border: rgba(0,0,0,0.4) 1px solid;
+    background-color: #fff;
+    color: #666;
+}
+
+.nav_login a:hover {
+    background-color: #333;
+}
+
+    
+/* ==========================================================================
+    6.Menu 
+   ==========================================================================
+*/
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.menu h3 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.menu > ul {
+    position: relative;
+}
+
+.menu > ul > li {
+    width: 50%;
+    background: #eee;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+}
+
+.menu > ul > li:last-child {
+    border: 0;
+}
+
+.menu > ul > li > a {
+    padding: 20px 0;
+}
+
+.menu > ul > li.active > a {
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.submenu {
+    position: absolute;
+    top: 10px; left: 55%;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.submenu > li > a {
+    padding: 14px 0;
+    color: #666;
+}
