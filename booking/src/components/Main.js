@@ -3,7 +3,7 @@ import './Main.css';
 import { useState } from 'react';
 import contentData from '../MainContentsList.json';
 
-function MainTitle({ selectedIndex }) {
+function MainTitle({ index }) {
     const MainTitleData = [
         {
             headline: "About Eight Fore",
@@ -19,7 +19,7 @@ function MainTitle({ selectedIndex }) {
         }
     ];
 
-    const title = MainTitleData[selectedIndex];
+    const title = MainTitleData[index];
 
     return (
         <div className="main_headline">
@@ -80,8 +80,6 @@ function Main() {
         'mainGlamping': 2
     };
     
-    const selectedIndex = categoryMap[selectedCategory];    
-
     return (
         <div id="main">
             <section id="main_visual">
@@ -102,14 +100,14 @@ function Main() {
                 <div className="booking">
                     <div className="inner">
                         <div className="btn">
-                            <a href="sub/room_1reserv_1.2.html">예약하기</a>
+                            {<a href="sub/room_1reserv_1.2.html">예약하기</a>}
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="main_content">
-                <MainTitle selectedIndex={selectedIndex} />
+                <MainTitle index={categoryMap[selectedCategory]} />
                 <MainContentsList contents={contentData[selectedCategory]} />
             </section>
         </div>
