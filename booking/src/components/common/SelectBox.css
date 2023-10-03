@@ -1,0 +1,43 @@
+/* ---------------------------------------- 
+    [공통] 상단 선택 박스 select box 
+    [공통] 글램핑/룸/기타 예약버튼 
+   ---------------------------------------- */
+  
+#title {
+    margin-top: 50px;
+    border-top: rgba(0,0,0,0.6) 1px solid;
+    border-bottom: #d2d2d2 1px solid;
+    background-color: #fff;
+}
+
+#title .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title .center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#title h2 {
+    font-size: 3.6rem;
+}
+
+#title h3 {
+    font-size: var(--title);
+    padding: 20px 10px 20px 0;
+}
+
+    .select_box {
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+        background-color: #fff;
+        color: #333333;
+        text-align-last: center; 
+        font-size: 1.4rem;
+    }
+
+/* text-align-last: center; select 기능 시 꼭 필요! */

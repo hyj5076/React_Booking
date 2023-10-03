@@ -93,6 +93,97 @@ button {
     border: 0;
 }
 
+
+/* ---------------------------------------- 
+    [공통] css 효과 
+   ---------------------------------------- */
+
+   /* 정렬 */
+   .spacebetween {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    /* 배경색 */
+    .back_white {
+        background-color: #fff;
+    }
+
+    .back_black {
+        background-color: #000;
+    }
+
+    .back_gray {
+        background-color: #eee;
+    }
+
+    /* 선색 */
+    .bord_bottom_black {
+        border-bottom: #000 1px solid;
+    }
+
+    .bord_bottom_gray {
+        border-bottom: #d2d2d2 1px solid;
+    }
+
+    /* 버튼 */
+        /* 하얀 버튼 */
+        .btn > a {
+            background-color: #fff;
+            transition: background 0.4s;
+            padding: 10px 0;
+            text-align: center;
+            border: #000 1px solid;
+        }
+        
+        /* 까만 버튼 */
+        .btn0 > a {
+            padding: 10px 0;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            border: #000 1px solid;
+        }
+
+        /* 짧은 버튼 */
+        .btn_short {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+            .btn_short .btn, 
+            .btn_short .btn0 {
+                width: calc(100%/3);
+            }
+
+        /* 긴 버튼 */
+        .btn_long {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+            .btn_long .btn, 
+            .btn_long .btn0 {
+                width: 100%;
+            }
+
 /* ==========================================================================
     2.Interactive
    ==========================================================================
