@@ -32,7 +32,7 @@ function Footer() {
         </div>
 
         <div className="copy">
-            <p>Copyright © 2023 EIGHTFORE RESORT & GLAMPING. <br/> Co. All rights reserved.</p>
+            <p>Copyright © 2024 EIGHTFORE RESORT & GLAMPING. <br/> Co. All rights reserved.</p>
         </div>
     </div>
   );
