@@ -1,0 +1,140 @@
+/* ------------------------------------------------- 
+    [공통]컨텐츠박스 : 어메니티, 안내사항, 오시는길
+
+    room_type / notice / waytocome
+   ------------------------------------------------- */
+
+   .content_box {
+    margin: 50px 0;
+}
+
+.content_box:last-child {
+    margin: 50px 0 0;
+}
+
+.content_box h4  {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.content_box .box {
+    border: #d2d2d2 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.content_box .box > div {
+    width: 100%;
+    padding: 20px;
+    border-bottom: #d2d2d2 1px solid;
+}
+
+.content_box .box > div:last-child {
+   border: 0;
+}
+
+.content_box p {
+    padding: 6px 0;
+}
+
+
+/* ------------------------------------------------- 
+    컨텐츠박스 : 룸스펙 roomspec
+
+    room_type
+   ------------------------------------------------- */
+
+.roomspec .box {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.roomspec .box > div {
+    width: 30%;
+    padding: 10px;
+    border-right: #d2d2d2 1px solid;
+}
+
+.roomspec .box > div:last-child {
+    border: 0;
+}
+
+.roomspec .box > div h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.roomspec .box > div p {
+    padding: 5px 0;
+}
+
+.roomspec .box > div p span {
+    color: #d2d2d2;
+    padding: 0 5px;
+}
+
+
+/* ------------------------------------------------- 
+    컨텐츠박스 : 어메니티 amenity
+
+    room_type
+   ------------------------------------------------- */
+
+.amenity h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+    /* [javaScript] 어메니티 슬라이드 버튼 효과 */
+
+    .title_amenity {
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* 폰트어썸 오류 */
+
+    .title_amenity:after {
+        content: '\f00c';
+        font-family: 'Font Awesome 5 Free','Font Awesome 5 Brands';
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        right: 0; top: -10px;
+    }
+
+
+/* ------------------------------------------------- 
+    어메니티 슬라이드 버튼
+
+    room_type
+   ------------------------------------------------- */
+
+.title_amenity {
+    cursor: pointer;
+    position: relative;
+}  
+
+.content_btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.content_btn > .btn {
+    width: calc(50% - 5px);
+}
+
+.content_btn > .btn > a {
+    width: 100%;
+}
+
+.content_btn > .btn:last-child > a {
+    margin-right: 0;
+}

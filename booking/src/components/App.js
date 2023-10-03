@@ -5,6 +5,7 @@ import Main from './Main';
 import Nav from './common/Nav';
 import RoomAll from './Room/RoomAll';
 import ButtonLink from './ButtonLink';
+import RoomDetail from './Room/RoomDetail';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         } />
         <Route path='/common/Nav' element={<Nav />} />
         <Route path='/Room/RoomAll' element={<RoomAll />} />
+        <Route path='/Room/RoomDetail' element={<RoomDetail />} />
       </Routes>
     </Router>
   );

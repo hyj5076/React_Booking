@@ -4,6 +4,7 @@ function ButtonLink() {
   return (
         <>
         <Link to="/Room/RoomAll">전체룸</Link>
+        <Link to="/Room/RoomDetail">룸디테일</Link>
         </>
   );
 }
