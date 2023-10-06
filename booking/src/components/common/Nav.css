@@ -15,8 +15,9 @@
     overflow: hidden;
 }
 
-.nav a {
+.nav button {
     color: #333;
+    font-size: 1.6rem;
 }
 
 .nav_title {
@@ -60,28 +61,28 @@
     text-align: center;
 }
 
-.nav_title li a {
+.nav_title li button {
     padding: 10px 0;
 }
 
 .nav_login {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 20px;
 }
 
-.nav_login a {
-    padding: 5px 0;
+.nav_login button {
+    padding: 10px 0;
     border-radius: 50px;
-    width: 120px;
+    width: 140px;
     text-align: center;
     border: rgba(0,0,0,0.4) 1px solid;
     background-color: #fff;
     color: #666;
 }
 
-.nav_login a:hover {
-    background-color: #333;
+.nav_login button:hover {
+    background-color: #ddd;
 }
 
     
@@ -122,7 +123,6 @@
 
 .menu > ul > li > button {
     padding: 20px 0;
-    font-size: 1.6rem;
 }
 
 .menu > ul > li.active > button {
@@ -140,6 +140,5 @@
 .submenu > li > button {
     padding: 14px 0;
     color: #666;
-    font-size: 1.6rem;
     text-align: left;
 }

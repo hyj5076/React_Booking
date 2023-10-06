@@ -96,11 +96,11 @@ function Menu() {
 
 function Nav() {
     return (
-        <div className="nav" id="navCommonMain">
+        <div className="nav">
             <div className="nav_header">
                 <div className="inner spacebetween">
                     <p className="back">
-                        <a href=""><i className="bi bi-arrow-left-short"></i></a>
+                        <button><i className="bi bi-arrow-left-short"></i></button>
                     </p>
                     <h1>
                         <Link to="/">
@@ -108,7 +108,7 @@ function Nav() {
                         </Link>
                     </h1>
                     <p className="close">
-                        <a href="#"><i className="bi bi-x"></i></a>
+                        <button href="#"><i className="bi bi-x"></i></button>
                     </p>
                 </div>
             </div>
@@ -117,16 +117,16 @@ function Nav() {
                 <div className="nav_title">
                     <h2>reservation</h2>
                     <div className="nav_login">
-                        <a href="">로그인</a>
-                        <a href="">비회원예약</a>
+                        <button>로그인</button>
+                        <button>비회원예약</button>
                     </div>
                 </div>
 
                 <div className="nav_title">
                     <ul>
-                        <li className="border-right"><a href="">예약현황</a></li>
-                        <li className="border-right"><a href="">예약하기</a></li>
-                        <li><a href="">예약확인/취소</a></li>
+                        <li className="border-right"><button>예약현황</button></li>
+                        <li className="border-right"><button>예약하기</button></li>
+                        <li><button>예약확인/취소</button></li>
                     </ul>
                 </div>
             
