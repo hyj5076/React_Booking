@@ -137,7 +137,7 @@
     left: 55%;
 }
 
-.submenu > li > button {
+.submenu .submenu-btn {
     padding: 14px 0;
     color: #666;
     text-align: left;

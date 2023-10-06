@@ -26,7 +26,9 @@ function Menu({ text }) {
                         <button>{menuItem.title}</button>
                         <ul className="submenu" style={{display: index === activeIndex ? 'block' : 'none'}}>
                             {menuItem.submenu.map(subItem => (
-                                <li><button>{subItem.title}</button></li>
+                                <li>
+                                    <Link className="submenu-btn" to={subItem.url}>{subItem.title}</Link>
+                                </li>
                             ))}
                         </ul>
                     </li>
