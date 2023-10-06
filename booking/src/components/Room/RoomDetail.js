@@ -2,6 +2,7 @@ import '../App.css';
 import './RoomDetail.css';
 
 function RoomDetail() {
+    
     return (
         <section id="content">
             <div class="inner">
