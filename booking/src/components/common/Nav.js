@@ -1,131 +1,90 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../App.css';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 
 
 function Menu() {
+    const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
-        // 초기 설정: 첫 번째 하위 메뉴를 표시하고 나머지를 숨김.
-        const firstSubmenu = document.querySelector('.menu > ul > li:first-child > ul');
+        // 처음 렌더링시에만 첫 번째 하위 메뉴를 표시
+        setActiveIndex(0);
+    }, []);
 
-        if (firstSubmenu) {
-            firstSubmenu.style.display = 'block';
-        }
-
-        const otherSubmenus = document.querySelectorAll('.submenu:not(.menu > ul > li:first-child > ul)');
-
-        otherSubmenus.forEach(submenu => {
-            submenu.style.display = 'none';
-        });
-
-        // 메뉴 항목 클릭 이벤트 핸들러
-        const menuItems = document.querySelectorAll('.menu > ul > li');
-
-        menuItems.forEach(menuItem => {
-            menuItem.addEventListener('click', function() {
-                // 클릭된 항목의 하위 메뉴를 표시
-                const submenu = this.querySelector('.submenu');
-
-                if (submenu) {
-                    submenu.style.display = 'block';
-                }
-
-                // 다른 항목의 하위 메뉴를 숨김
-                const siblingSubmenus = this.parentNode.querySelectorAll('.submenu');
-
-                siblingSubmenus.forEach(sibSubmenu => {
-                    if (sibSubmenu !== submenu) {
-                        sibSubmenu.style.display = 'none';
-                    }
-                });
-
-                // active 클래스 적용
-                menuItems.forEach(item => {
-                    item.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
-        });
-    });
+    const handleItemClick = (index) => {
+        setActiveIndex(index);
+    };
 
     const menuData = [
         {
             title: "객실",
-            link: "#",
             submenu: [
-                { title: "전체객실타입", link: "" },
-                { title: "더블룸", link: "" },
-                { title: "트윈룸", link: "" },
-                { title: "트리플룸", link: "" },
-                { title: "패밀리룸", link: "" },
-                { title: "단체룸", link: "" },
-                { title: "단체룸", link: "" },
+                { title: "전체객실타입"},
+                { title: "더블룸"},
+                { title: "트윈룸"},
+                { title: "트리플룸"},
+                { title: "패밀리룸"},
+                { title: "단체룸"},
+                { title: "단체룸"},
             ]
         },
         {
             title: "단체",
-            link: "#",
             submenu: [
-                { title: "단체견적문의", link: "" },
-                { title: "단체연수후기", link: "" }
+                { title: "단체견적문의"},
+                { title: "단체연수후기"}
             ]
         },
         {
             title: "글램핑",
-            link: "#",
             submenu: [
-                { title: "글램핑", link: "" },
-                { title: "바베큐장", link: "" }
+                { title: "글램핑"},
+                { title: "바베큐장"}
             ]
         },
         {
             title: "실내시설",
-            link: "#",
             submenu: [
-                { title: "전체실내시설", link: "" },
-                { title: "소강당/노래방", link: "" },
-                { title: "세미나실", link: "" },
-                { title: "탁구장/당구장", link: "" },
-                { title: "식당", link: "" }
+                { title: "전체실내시설"},
+                { title: "소강당/노래방"},
+                { title: "세미나실"},
+                { title: "탁구장/당구장"},
+                { title: "식당"}
             ]
         },
         {
             title: "야외시설",
-            link: "#",
             submenu: [
-                { title: "전체야외시설", link: "" },
-                { title: "글램핑/바베큐장", link: "" },
-                { title: "소규모운동장", link: "" },
-                { title: "체육대회소품", link: "" },
-                { title: "루프팔각탑", link: "" }
+                { title: "전체야외시설"},
+                { title: "글램핑/바베큐장"},
+                { title: "소규모운동장"},
+                { title: "체육대회소품"},
+                { title: "루프팔각탑"}
             ]
         },
         {
             title: "이용안내",
-            link: "#",
             submenu: [
-                { title: "에잇포레 소개", link: "" },
-                { title: "오시는길", link: "" },
-                { title: "배치도&갤러리", link: "" },
-                { title: "주변놀거리", link: "" },
-                { title: "이벤트", link: "" }
+                { title: "에잇포레 소개"},
+                { title: "오시는길"},
+                { title: "배치도&갤러리"},
+                { title: "주변놀거리"},
+                { title: "이벤트"}
             ]
         }
     ];
     
-
     return (
         <div className="menu">
             <h3>menu</h3>
             <ul>
                 {menuData.map((menuItem, index) => (
-                    <li className={index === 0 ? "active" : ""}>
-                        <a href={menuItem.link}>{menuItem.title}</a>
-                        <ul className="submenu">
+                     <li className={index === activeIndex ? "active" : ""} onClick={() => handleItemClick(index)}>
+                        <button>{menuItem.title}</button>
+                        <ul className="submenu" style={{display: index === activeIndex ? 'block' : 'none'}}>
                             {menuItem.submenu.map(subItem => (
-                                <li><a href={subItem.link || "#"}>{subItem.title}</a></li>
+                                <li><button>{subItem.title}</button></li>
                             ))}
                         </ul>
                     </li>
