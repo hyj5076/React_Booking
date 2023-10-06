@@ -4,7 +4,6 @@ import Header from './common/Header';
 import Main from './Main';
 import Nav from './common/Nav';
 import RoomAll from './Room/RoomAll';
-import ButtonLink from './ButtonLink';
 import RoomDetail from './Room/RoomDetail';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -16,7 +15,6 @@ function App() {
           <>
             <Header />
             <Main />
-            <ButtonLink />
             <Footer />
           </>
         } />
