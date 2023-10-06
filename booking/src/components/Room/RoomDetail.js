@@ -21,35 +21,32 @@ function RoomSpec({ spec }) {
 }
 
 function RoomAmenity({ amenity }) {
-
-    const halfLength = Math.ceil(amenityItems.length / 2);
-    //const itemFirstHalf = amenityItems.slice(0, halfLength);
-    //const itemSecondHalf = amenityItems.slice(halfLength);
+    const halfLength = Math.ceil(amenity.length / 2);
+    const itemFirstHalf = amenity.slice(0, halfLength);
+    const itemSecondHalf = amenity.slice(halfLength);
+    
+    const combined = [...itemFirstHalf.map(item => ({ ...item, className: "left" })), 
+                      ...itemSecondHalf.map(item => ({ ...item, className: "right" }))];
 
     return (
-        <>
         <div className="content_box amenity">
             <h4>객실 어메니티</h4>
             <div className="box">
-                {amenity.map(box => (
-                <div key={divIndex} className={divIndex < halfLength ? "left" : "right"}>
-                    <h3 className="title_amenity">{box.title}</h3>
-                    <div className="spacebetween">
-                        {box.map(div => (
-                            <div>
-                                {div.map(p =>(
-                                    <p>{p.item}</p>
-                                ))}
-                            </div>
-                        ))}
+                {combined.map((box, index) => (
+                    <div key={index} className={box.className}>
+                        <h3 className="title_amenity">{box.title}</h3>
+                        <div className="spacebetween">
+                            {box.items.map((item, itemIndex) => (
+                                <p key={itemIndex}>{item}</p>
+                            ))}
+                        </div>
                     </div>
-                </div>
                 ))}
             </div>
         </div>
-        </>
     )
 }
+
 
 function RoomNotice({ notice }) {
     return (
