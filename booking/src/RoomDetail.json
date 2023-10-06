@@ -1,10 +1,10 @@
 {
     "RoomDetailData" : [
         {
-            "type": "Double Room",
+            "type": "더블룸",
+            "title": "Double Room",
             "description": "",
             "image": "",
-            "alt": "더블룸",
             "linkbooking": "",
             "spec": [
                 {
@@ -78,10 +78,10 @@
             ]
         },
         {
-            "type": "Twin Room",
+            "type": "트윈룸",
+            "title": "Twin Room",
             "description": "",
             "image": "",
-            "alt": "트윈룸",
             "linkbooking": "",
             "spec": [
                 {
@@ -90,7 +90,7 @@
                 },
                 {
                     "title": "beds",
-                    "spec": "트윈"
+                    "spec": "싱글2"
                 },
                 {
                     "title": "size",
@@ -112,10 +112,10 @@
             "amenity": []
         },
         {
-            "type": "Triple Room",
+            "type": "트리플룸",
+            "title": "Triple Room",
             "description": "",
             "image": "",
-            "alt": "트윈룸",
             "linkbooking": "",
             "spec": [
                 {
@@ -124,15 +124,117 @@
                 },
                 {
                     "title": "beds",
-                    "spec": "트윈"
+                    "spec": "퀸1, 싱글1"
                 },
                 {
                     "title": "size",
-                    "spec": "18평"
+                    "spec": "24평"
                 },
                 {
                     "title": "room",
-                    "spec": "침실1, 화장실1"
+                    "spec": "침실2, 화장실1"
+                },
+                {
+                    "title": "check-in/out",
+                    "spec": "15:00/11:00"
+                },
+                {
+                    "title": "view",
+                    "spec": "가든뷰, 계곡뷰"
+                }
+            ],
+            "amenity": []
+        },
+        {
+            "type": "패밀리룸",
+            "title": "Family Room",
+            "description": "",
+            "image": "",
+            "linkbooking": "",
+            "spec": [
+                {
+                    "title": "location",
+                    "spec": "객실"
+                },
+                {
+                    "title": "beds",
+                    "spec": "킹1, 퀸2"
+                },
+                {
+                    "title": "size",
+                    "spec": "32평"
+                },
+                {
+                    "title": "room",
+                    "spec": "침실3, 화장실2"
+                },
+                {
+                    "title": "check-in/out",
+                    "spec": "15:00/11:00"
+                },
+                {
+                    "title": "view",
+                    "spec": "가든뷰, 계곡뷰"
+                }
+            ],
+            "amenity": []
+        },
+        {
+            "type": "단체룸",
+            "title": "Room For Group",
+            "description": "",
+            "image": "",
+            "linkbooking": "",
+            "spec": [
+                {
+                    "title": "location",
+                    "spec": "객실"
+                },
+                {
+                    "title": "beds",
+                    "spec": "침구류(10인)"
+                },
+                {
+                    "title": "size",
+                    "spec": "40평"
+                },
+                {
+                    "title": "room",
+                    "spec": "방3, 화장실2"
+                },
+                {
+                    "title": "check-in/out",
+                    "spec": "15:00/11:00"
+                },
+                {
+                    "title": "view",
+                    "spec": "가든뷰, 계곡뷰"
+                }
+            ],
+            "amenity": []
+        },
+        {
+            "type": "키즈룸",
+            "title": "Kids Room",
+            "description": "",
+            "image": "",
+            "linkbooking": "",
+            "spec": [
+                {
+                    "title": "location",
+                    "spec": "객실"
+                },
+                {
+                    "title": "beds",
+                    "spec": "퀸1, 싱글1"
+                },
+                {
+                    "title": "size",
+                    "spec": "24평"
+                },
+                {
+                    "title": "room",
+                    "spec": "방2, 화장실2"
                 },
                 {
                     "title": "check-in/out",
