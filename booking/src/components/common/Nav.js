@@ -4,6 +4,17 @@ import './Nav.css';
 import { Link } from 'react-router-dom';
 import menuData from '../../NavMenuList.json';
 
+function Submenu({ items, visible }) {
+    return (
+        <ul className="submenu" style={{ display: visible ? 'block' : 'none' }}>
+            {items.map(subItem => (
+                <li>
+                    <Link className="submenu-btn" to={subItem.url}>{subItem.title}</Link>
+                </li>
+            ))}
+        </ul>
+    );
+}
 
 function Menu({ text }) {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -16,21 +27,20 @@ function Menu({ text }) {
     const handleItemClick = (index) => {
         setActiveIndex(index);
     };
-    
+
     return (
         <div className="menu">
             <h3>menu</h3>
             <ul>
                 {text.map((menuItem, index) => (
-                     <li className={index === activeIndex ? "active" : ""} onClick={() => handleItemClick(index)}>
+                    <li 
+                    className={index === activeIndex ? "active" : ""} 
+                    onClick={() => handleItemClick(index)}>
                         <button>{menuItem.title}</button>
-                        <ul className="submenu" style={{display: index === activeIndex ? 'block' : 'none'}}>
-                            {menuItem.submenu.map(subItem => (
-                                <li>
-                                    <Link className="submenu-btn" to={subItem.url}>{subItem.title}</Link>
-                                </li>
-                            ))}
-                        </ul>
+                        <Submenu 
+                        items={menuItem.submenu} 
+                        visible={index === activeIndex} 
+                        />
                     </li>
                 ))}
             </ul>
