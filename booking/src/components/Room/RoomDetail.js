@@ -1,5 +1,7 @@
+import { useParams } from 'react-router-dom';
 import '../App.css';
 import './RoomDetail.css';
+import roomsData from '../../TestRoomDetail.json';
 
 /* function RoomSpec({ spec }) {
     return (
@@ -63,7 +65,14 @@ import './RoomDetail.css';
     )
 } */
 
-function RoomDetail({ room }) {
+function RoomDetail() {
+    const { roomType } = useParams();
+    const room = roomsData[roomType] && roomsData[roomType][0];
+
+    // 데이터가 존재하지 않을 경우 처리
+    if (!room) {
+        return <div>Room not found</div>;
+    }    
     
     return (
         <section id="content">

@@ -1,35 +1,45 @@
 {
-    "TestRoomDetailData" : [
+    "double" : [
         {
             "type": "더블룸",
             "title": "Double Room",
             "description": "에잇포레 더블룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
             "image": ""
-        },
+        }
+    ],
+    "twin" : [
         {
             "type": "트윈룸",
             "title": "Twin Room",
             "description": "에잇포레 더블룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
             "image": ""
-        },
+        }
+    ],
+    "triple" : [
         {
             "type": "트리플룸",
             "title": "Triple Room",
             "description": "에잇포레 더블룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
             "image": ""
-        },
+        }
+    ],
+    "family" : [
         {
             "type": "패밀리룸",
             "title": "Family Room",
             "description": "에잇포레 더블룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
             "image": ""
-        },
+        }
+    ],
+    "group" : [
         {
             "type": "단체룸",
             "title": "Room For Group",
             "description": "에잇포레 더블룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
             "image": ""
-        },
+        }
+    ],
+    "kids" : [
         {
             "type": "키즈룸",
             "title": "Kids Room",

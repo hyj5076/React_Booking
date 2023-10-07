@@ -20,7 +20,10 @@ function App() {
         } />
         <Route path='/common/Nav' element={<Nav />} />
         <Route path='/Room/RoomAll' element={<RoomAll />} />
-        <Route path='/Room/RoomDetail' element={<RoomDetail />} />
+        <Route 
+          path='/Room/:roomType' 
+          element={<RoomDetail />}
+        />
       </Routes>
     </Router>
   );

@@ -9,7 +9,11 @@ function Submenu({ items, visible }) {
         <ul className="submenu" style={{ display: visible ? 'block' : 'none' }}>
             {items.map(subItem => (
                 <li>
-                    <Link className="submenu-btn" to={subItem.url}>{subItem.title}</Link>
+                    <Link 
+                    className="submenu-btn" 
+                    to={`/Room/${subItem.roomType}`}>
+                        {subItem.title}
+                    </Link>
                 </li>
             ))}
         </ul>
