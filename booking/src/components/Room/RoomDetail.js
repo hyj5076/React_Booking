@@ -1,7 +1,7 @@
 import '../App.css';
 import './RoomDetail.css';
 
-function RoomSpec({ spec }) {
+/* function RoomSpec({ spec }) {
     return (
         <>
         <div className="roomspec">
@@ -18,9 +18,9 @@ function RoomSpec({ spec }) {
         </div>
         </>
     )
-}
+} */
 
-function RoomAmenity({ amenity }) {
+/* function RoomAmenity({ amenity }) {
     const halfLength = Math.ceil(amenity.length / 2);
     const itemFirstHalf = amenity.slice(0, halfLength);
     const itemSecondHalf = amenity.slice(halfLength);
@@ -45,10 +45,10 @@ function RoomAmenity({ amenity }) {
             </div>
         </div>
     )
-}
+} */
 
 
-function RoomNotice({ notice }) {
+/* function RoomNotice({ notice }) {
     return (
     <div className="content_box">
         <h4>안내사항</h4>
@@ -61,9 +61,9 @@ function RoomNotice({ notice }) {
         </div>
     </div>
     )
-}
+} */
 
-function RoomDetail() {
+function RoomDetail({ room }) {
     
     return (
         <section id="content">
@@ -83,9 +83,9 @@ function RoomDetail() {
                         <div className="btn"><a>예약하기</a></div>
                     </div>
 
-                    <RoomSpec />
+                    {/* <RoomSpec />
                     <RoomAmenity />
-                    <RoomNotice />
+                    <RoomNotice /> */}
                 </div>
             </div>
         </section>
