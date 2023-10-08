@@ -1,251 +1,51 @@
 {
-    "RoomDetailData" : [
+    "double" : [
         {
             "type": "더블룸",
             "title": "Double Room",
-            "description": "에잇포레 룸타입에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
-            "image": "",
-            "link": "",
-            "spec": [
-                {
-                    "title": "location",
-                    "spec": "객실"
-                },
-                {
-                    "title": "beds",
-                    "spec": "더블"
-                },
-                {
-                    "title": "size",
-                    "spec": "14평"
-                },
-                {
-                    "title": "room",
-                    "spec": "침실1, 화장실1"
-                },
-                {
-                    "title": "check-in/out",
-                    "spec": "15:00/11:00"
-                },
-                {
-                    "title": "view",
-                    "spec": "가든뷰, 계곡뷰"
-                }
-            ],
-            "amenity": [
-                {
-                    "title": "bath room",
-                    "amenity": [
-                        { "item": "목욕가운" },
-                        { "item": "목욕용품" },
-                        { "item": "비데" },
-                        { "item": "샤워캡&수건" },
-                        { "item": "샤워부스" },
-                        { "item": "헤어드라이어" }
-                    ]
-                },
-                {
-                    "title": "bed room",
-                    "amenity": [
-                        { "item": "TV" },
-                        { "item": "스피커" },
-                        { "item": "220V" },
-                        { "item": "침대" },
-                        { "item": "전화기" },
-                        { "item": "냉난방" }
-                    ]
-                },
-                {
-                    "title": "mini var",
-                    "amenity": [
-                        { "item": "냉장고" },
-                        { "item": "커피머신" },
-                        { "item": "스낵(유료)" },
-                        { "item": "전기주전자" },
-                        { "item": "생수&티" },
-                        { "item": "컵&잔" }
-                    ]
-                },
-                {
-                    "title": "closet",
-                    "amenity": [
-                        { "item": "슬리퍼" },
-                        { "item": "옷걸이" },
-                        { "item": "구두주걱" },
-                        { "item": "소화기" }
-                    ]
-                }
-            ]
-        },
+            "description": ["에잇포레 더블룸에 대한 예시 설명입니다. \n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다."],
+            "image": "/images/sub/room_double.jpg"
+        }
+    ],
+    "twin" : [
         {
             "type": "트윈룸",
             "title": "Twin Room",
-            "description": "",
-            "image": "",
-            "link": "",
-            "spec": [
-                {
-                    "title": "location",
-                    "spec": "객실"
-                },
-                {
-                    "title": "beds",
-                    "spec": "싱글2"
-                },
-                {
-                    "title": "size",
-                    "spec": "18평"
-                },
-                {
-                    "title": "room",
-                    "spec": "침실1, 화장실1"
-                },
-                {
-                    "title": "check-in/out",
-                    "spec": "15:00/11:00"
-                },
-                {
-                    "title": "view",
-                    "spec": "가든뷰, 계곡뷰"
-                }
-            ],
-            "amenity": []
-        },
+            "description": "에잇포레 트윈룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
+            "image": "/images/sub/room_twin.jpg"
+        }
+    ],
+    "triple" : [
         {
             "type": "트리플룸",
             "title": "Triple Room",
-            "description": "",
-            "image": "",
-            "link": "",
-            "spec": [
-                {
-                    "title": "location",
-                    "spec": "객실"
-                },
-                {
-                    "title": "beds",
-                    "spec": "퀸1, 싱글1"
-                },
-                {
-                    "title": "size",
-                    "spec": "24평"
-                },
-                {
-                    "title": "room",
-                    "spec": "침실2, 화장실1"
-                },
-                {
-                    "title": "check-in/out",
-                    "spec": "15:00/11:00"
-                },
-                {
-                    "title": "view",
-                    "spec": "가든뷰, 계곡뷰"
-                }
-            ],
-            "amenity": []
-        },
+            "description": "에잇포레 트리플룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
+            "image": "/images/sub/room_triple.jpg"
+        }
+    ],
+    "family" : [
         {
             "type": "패밀리룸",
             "title": "Family Room",
-            "description": "",
-            "image": "",
-            "link": "",
-            "spec": [
-                {
-                    "title": "location",
-                    "spec": "객실"
-                },
-                {
-                    "title": "beds",
-                    "spec": "킹1, 퀸2"
-                },
-                {
-                    "title": "size",
-                    "spec": "32평"
-                },
-                {
-                    "title": "room",
-                    "spec": "침실3, 화장실2"
-                },
-                {
-                    "title": "check-in/out",
-                    "spec": "15:00/11:00"
-                },
-                {
-                    "title": "view",
-                    "spec": "가든뷰, 계곡뷰"
-                }
-            ],
-            "amenity": []
-        },
+            "description": "에잇포레 패밀리룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
+            "image": "/images/sub/room_family.jpg"
+        }
+    ],
+    "group" : [
         {
             "type": "단체룸",
             "title": "Room For Group",
-            "description": "",
-            "image": "",
-            "link": "",
-            "spec": [
-                {
-                    "title": "location",
-                    "spec": "객실"
-                },
-                {
-                    "title": "beds",
-                    "spec": "침구류(10인)"
-                },
-                {
-                    "title": "size",
-                    "spec": "40평"
-                },
-                {
-                    "title": "room",
-                    "spec": "방3, 화장실2"
-                },
-                {
-                    "title": "check-in/out",
-                    "spec": "15:00/11:00"
-                },
-                {
-                    "title": "view",
-                    "spec": "가든뷰, 계곡뷰"
-                }
-            ],
-            "amenity": []
-        },
+            "description": "에잇포레 단체룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
+            "image": "/images/sub/room_forgroup.jpg"
+        }
+    ],
+    "kids" : [
         {
             "type": "키즈룸",
             "title": "Kids Room",
-            "description": "",
-            "image": "",
-            "link": "",
-            "spec": [
-                {
-                    "title": "location",
-                    "spec": "객실"
-                },
-                {
-                    "title": "beds",
-                    "spec": "퀸1, 싱글1"
-                },
-                {
-                    "title": "size",
-                    "spec": "24평"
-                },
-                {
-                    "title": "room",
-                    "spec": "방2, 화장실2"
-                },
-                {
-                    "title": "check-in/out",
-                    "spec": "15:00/11:00"
-                },
-                {
-                    "title": "view",
-                    "spec": "가든뷰, 계곡뷰"
-                }
-            ],
-            "amenity": []
+            "description": "에잇포레 키즈룸에 대한 예시 설명입니다.\n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
+            "image": "/images/sub/room_kids.jpg"
         }
     ]
+    
 }

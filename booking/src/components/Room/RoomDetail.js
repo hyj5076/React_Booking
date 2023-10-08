@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom';
 import '../App.css';
 import './RoomDetail.css';
-import roomsData from '../../TestRoomDetail.json';
+import { Link } from 'react-router-dom';
+import roomsData from '../../RoomDetail.json';
 
 /* function RoomSpec({ spec }) {
     return (
@@ -88,13 +89,13 @@ function RoomDetail() {
                     </div>
                     
                     <div className="content_btn">
-                        <div className="btn"><a>공유하기</a></div>
-                        <div className="btn"><a>예약하기</a></div>
+                        <div className="btn"><Link>공유하기</Link></div>
+                        <div className="btn"><Link>예약하기</Link></div>
                     </div>
 
-                    {/* <RoomSpec />
-                    <RoomAmenity />
-                    <RoomNotice /> */}
+                    {/* <RoomSpec /> */}
+                    {/* <RoomAmenity /> */}
+                    {/* <RoomNotice /> */}
                 </div>
             </div>
         </section>

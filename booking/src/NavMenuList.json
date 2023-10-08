@@ -5,8 +5,7 @@
             "submenu": [
                 { 
                     "title": "전체객실타입",
-                    "url": "/Room/RoomAll",
-                    "roomType": "all"
+                    "roomType": "RoomAll"
                 },
                 {   
                     "title": "더블룸",                    
