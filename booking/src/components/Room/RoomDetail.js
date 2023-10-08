@@ -26,33 +26,38 @@ function RoomSpec({ spec = [] }) {
 }
 
 
-/* function RoomAmenity({ amenity }) {
-    const halfLength = Math.ceil(amenity.length / 2);
-    const itemFirstHalf = amenity.slice(0, halfLength);
-    const itemSecondHalf = amenity.slice(halfLength);
-    
-    const combined = [...itemFirstHalf.map(item => ({ ...item, className: "left" })), 
-                      ...itemSecondHalf.map(item => ({ ...item, className: "right" }))];
-
+function RoomAmenity({ amenity = [] }) {
     return (
         <div className="content_box amenity">
             <h4>객실 어메니티</h4>
             <div className="box">
-                {combined.map((box, index) => (
-                    <div key={index} className={box.className}>
-                        <h3 className="title_amenity">{box.title}</h3>
-                        <div className="spacebetween">
-                            {box.items.map((item, itemIndex) => (
-                                <p key={itemIndex}>{item}</p>
-                            ))}
+                {amenity.map((box, index) => {
+                    const allIndex = Math.ceil(box.amenity.length / 2);
+                    const leftItems = box.amenity.slice(0, allIndex);
+                    const rightItems = box.amenity.slice(allIndex);
+
+                    return (
+                        <div key={index}>
+                            <h3 className="title_amenity">{box.title}</h3>
+                            <div className="spacebetween">
+                                <div className="left">
+                                    {leftItems.map((item, itemIndex) => (
+                                        <p key={itemIndex}>{item.item}</p>
+                                    ))}
+                                </div>
+                                <div className="right">
+                                    {rightItems.map((item, itemIndex) => (
+                                        <p key={itemIndex}>{item.item}</p>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </div>
     )
-} */
-
+}
 
 /* function RoomNotice({ notice }) {
     return (
@@ -100,7 +105,7 @@ function RoomDetail() {
                     </div>
 
                     <RoomSpec spec={room.spec} />
-                    {/* <RoomAmenity /> */}
+                    <RoomAmenity amenity={room.amenity} />
                     {/* <RoomNotice /> */}
                 </div>
             </div>
