@@ -3,8 +3,38 @@
         {
             "type": "더블룸",
             "title": "Double Room",
-            "description": ["에잇포레 더블룸에 대한 예시 설명입니다. \n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다."],
-            "image": "/images/sub/room_double.jpg"
+            "description": "에잇포레 더블룸에 대한 예시 설명입니다. \n\n모던과 클래식, 도시와 자연이 공존하는 \n안락한 휴식의 시간을 선물할 것입니다.",
+            "image": "/images/sub/room_double.jpg",
+            "spec": [
+                [
+                    {
+                        "title": "location",
+                        "spec": "객실"
+                    },
+                    {
+                        "title": "beds",
+                        "spec": "더블"
+                    },
+                    {
+                        "title": "size",
+                        "spec": "14평"
+                    }
+                ],
+                [
+                    {
+                        "title": "room",
+                        "spec": "침실1, 화장실1"
+                    },
+                    {
+                        "title": "check-in/out",
+                        "spec": "15:00/11:00"
+                    },
+                    {
+                        "title": "view",
+                        "spec": "가든뷰, 계곡뷰"
+                    }
+                ]
+            ]
         }
     ],
     "twin" : [

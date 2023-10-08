@@ -3,25 +3,28 @@ import '../App.css';
 import './RoomDetail.css';
 import { Link } from 'react-router-dom';
 import roomsData from '../../RoomDetail.json';
+import Header from '../common/Header';
+import SelectBox from '../common/SelectBox';
 
-/* function RoomSpec({ spec }) {
+function RoomSpec({ spec = [] }) {
     return (
         <>
         <div className="roomspec">
-            {spec.map(box => (
+            {spec.map(item => (
                 <div className="box">
-                    {box.map(p => (
+                    {item.map(p => (
                         <div>
                             <h3>{p.title}</h3>
-                            <p>객실</p>
+                            <p>{p.spec}</p>
                         </div>
                     ))}
                 </div>
-            ))}             
+            ))}
         </div>
         </>
     )
-} */
+}
+
 
 /* function RoomAmenity({ amenity }) {
     const halfLength = Math.ceil(amenity.length / 2);
@@ -76,6 +79,9 @@ function RoomDetail() {
     }    
     
     return (
+        <>
+        <Header />
+        <SelectBox />
         <section id="content">
             <div className="inner">
                 <div className="content_main">
@@ -93,12 +99,13 @@ function RoomDetail() {
                         <div className="btn"><Link>예약하기</Link></div>
                     </div>
 
-                    {/* <RoomSpec /> */}
+                    <RoomSpec spec={room.spec} />
                     {/* <RoomAmenity /> */}
                     {/* <RoomNotice /> */}
                 </div>
             </div>
         </section>
+        </>
     );
 }
 
