@@ -116,6 +116,50 @@
                         "spec": "가든뷰, 계곡뷰"
                     }
                 ]
+            ],
+            "amenity": [
+                {
+                    "title": "bath room",
+                    "amenity": [
+                        { "item": "목욕가운" },
+                        { "item": "목욕용품" },
+                        { "item": "비데" },
+                        { "item": "샤워캡&수건" },
+                        { "item": "샤워부스" },
+                        { "item": "헤어드라이어" }
+                    ]
+                },
+                {
+                    "title": "bed room",
+                    "amenity": [
+                        { "item": "TV" },
+                        { "item": "스피커" },
+                        { "item": "220V" },
+                        { "item": "침대" },
+                        { "item": "전화기" },
+                        { "item": "냉난방" }
+                    ]
+                },
+                {
+                    "title": "mini var",
+                    "amenity": [
+                        { "item": "냉장고" },
+                        { "item": "커피머신" },
+                        { "item": "스낵(유료)" },
+                        { "item": "전기주전자" },
+                        { "item": "생수&티" },
+                        { "item": "컵&잔" }
+                    ]
+                },
+                {
+                    "title": "closet",
+                    "amenity": [
+                        { "item": "슬리퍼" },
+                        { "item": "옷걸이" },
+                        { "item": "구두주걱" },
+                        { "item": "소화기" }
+                    ]
+                }
             ]
         }
     ],
@@ -154,6 +198,50 @@
                         "spec": "계곡뷰"
                     }
                 ]
+            ],
+            "amenity": [
+                {
+                    "title": "bath room",
+                    "amenity": [
+                        { "item": "목욕가운" },
+                        { "item": "목욕용품" },
+                        { "item": "비데" },
+                        { "item": "샤워캡&수건" },
+                        { "item": "샤워부스" },
+                        { "item": "헤어드라이어" }
+                    ]
+                },
+                {
+                    "title": "bed room",
+                    "amenity": [
+                        { "item": "TV" },
+                        { "item": "스피커" },
+                        { "item": "220V" },
+                        { "item": "침대" },
+                        { "item": "전화기" },
+                        { "item": "냉난방" }
+                    ]
+                },
+                {
+                    "title": "mini var",
+                    "amenity": [
+                        { "item": "냉장고" },
+                        { "item": "커피머신" },
+                        { "item": "스낵(유료)" },
+                        { "item": "전기주전자" },
+                        { "item": "생수&티" },
+                        { "item": "컵&잔" }
+                    ]
+                },
+                {
+                    "title": "closet",
+                    "amenity": [
+                        { "item": "슬리퍼" },
+                        { "item": "옷걸이" },
+                        { "item": "구두주걱" },
+                        { "item": "소화기" }
+                    ]
+                }
             ]
         }
     ],
@@ -192,6 +280,50 @@
                         "spec": "계곡뷰"
                     }
                 ]
+            ],
+            "amenity": [
+                {
+                    "title": "bath room",
+                    "amenity": [
+                        { "item": "목욕가운" },
+                        { "item": "목욕용품" },
+                        { "item": "비데" },
+                        { "item": "샤워캡&수건" },
+                        { "item": "샤워부스" },
+                        { "item": "헤어드라이어" }
+                    ]
+                },
+                {
+                    "title": "bed room",
+                    "amenity": [
+                        { "item": "TV" },
+                        { "item": "스피커" },
+                        { "item": "220V" },
+                        { "item": "침대" },
+                        { "item": "전화기" },
+                        { "item": "냉난방" }
+                    ]
+                },
+                {
+                    "title": "mini var",
+                    "amenity": [
+                        { "item": "냉장고" },
+                        { "item": "커피머신" },
+                        { "item": "스낵(유료)" },
+                        { "item": "전기주전자" },
+                        { "item": "생수&티" },
+                        { "item": "컵&잔" }
+                    ]
+                },
+                {
+                    "title": "closet",
+                    "amenity": [
+                        { "item": "슬리퍼" },
+                        { "item": "옷걸이" },
+                        { "item": "구두주걱" },
+                        { "item": "소화기" }
+                    ]
+                }
             ]
         }
     ],
@@ -230,6 +362,50 @@
                         "spec": "가든뷰, 계곡뷰"
                     }
                 ]
+            ],
+            "amenity": [
+                {
+                    "title": "bath room",
+                    "amenity": [
+                        { "item": "목욕가운" },
+                        { "item": "목욕용품" },
+                        { "item": "비데" },
+                        { "item": "샤워캡&수건" },
+                        { "item": "샤워부스" },
+                        { "item": "헤어드라이어" }
+                    ]
+                },
+                {
+                    "title": "bed room",
+                    "amenity": [
+                        { "item": "TV" },
+                        { "item": "스피커" },
+                        { "item": "220V" },
+                        { "item": "침대" },
+                        { "item": "전화기" },
+                        { "item": "냉난방" }
+                    ]
+                },
+                {
+                    "title": "mini var",
+                    "amenity": [
+                        { "item": "냉장고" },
+                        { "item": "커피머신" },
+                        { "item": "스낵(유료)" },
+                        { "item": "전기주전자" },
+                        { "item": "생수&티" },
+                        { "item": "컵&잔" }
+                    ]
+                },
+                {
+                    "title": "closet",
+                    "amenity": [
+                        { "item": "슬리퍼" },
+                        { "item": "옷걸이" },
+                        { "item": "구두주걱" },
+                        { "item": "소화기" }
+                    ]
+                }
             ]
         }
     ],
@@ -268,6 +444,50 @@
                         "spec": "가든뷰, 계곡뷰"
                     }
                 ]
+            ],
+            "amenity": [
+                {
+                    "title": "bath room",
+                    "amenity": [
+                        { "item": "목욕가운" },
+                        { "item": "목욕용품" },
+                        { "item": "비데" },
+                        { "item": "샤워캡&수건" },
+                        { "item": "샤워부스" },
+                        { "item": "헤어드라이어" }
+                    ]
+                },
+                {
+                    "title": "bed room",
+                    "amenity": [
+                        { "item": "TV" },
+                        { "item": "스피커" },
+                        { "item": "220V" },
+                        { "item": "침대" },
+                        { "item": "전화기" },
+                        { "item": "냉난방" }
+                    ]
+                },
+                {
+                    "title": "mini var",
+                    "amenity": [
+                        { "item": "냉장고" },
+                        { "item": "커피머신" },
+                        { "item": "스낵(유료)" },
+                        { "item": "전기주전자" },
+                        { "item": "생수&티" },
+                        { "item": "컵&잔" }
+                    ]
+                },
+                {
+                    "title": "closet",
+                    "amenity": [
+                        { "item": "슬리퍼" },
+                        { "item": "옷걸이" },
+                        { "item": "구두주걱" },
+                        { "item": "소화기" }
+                    ]
+                }
             ]
         }
     ]
