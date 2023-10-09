@@ -31,7 +31,8 @@
                     "title": "키즈룸", 
                     "roomType": "kids"
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             "title": "단체",
@@ -44,7 +45,8 @@
                     "title": "단체연수후기", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
 
@@ -58,7 +60,8 @@
                     "title": "바베큐장", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             
@@ -84,7 +87,8 @@
                     "title": "식당", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             
@@ -110,7 +114,8 @@
                     "title": "루프팔각탑", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             
@@ -136,7 +141,8 @@
                     "title": "이벤트", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         }
     ]
 }
