@@ -5,31 +5,31 @@
             "submenu": [
                 { 
                     "title": "전체객실타입",
-                    "roomType": "RoomAll"
+                    "linkPath": "RoomAll"
                 },
                 {   
                     "title": "더블룸",                    
-                    "roomType": "double"
+                    "linkPath": "double"
                 },
                 {   
                     "title": "트윈룸",
-                    "roomType": "twin"
+                    "linkPath": "twin"
                 },
                 {   
                     "title": "트리플룸",
-                    "roomType": "triple"
+                    "linkPath": "triple"
                 },
                 {   
                     "title": "패밀리룸",
-                    "roomType": "family"
+                    "linkPath": "family"
                 },
                 {   
                     "title": "단체룸",
-                    "roomType": "group"
+                    "linkPath": "group"
                 },
                 {   
                     "title": "키즈룸", 
-                    "roomType": "kids"
+                    "linkPath": "kids"
                 }
             ],
             "baseLink": "/Room"

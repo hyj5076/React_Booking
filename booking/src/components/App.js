@@ -21,7 +21,7 @@ function App() {
         <Route path='/common/Nav' element={<Nav />} />
         <Route path='/Room/RoomAll' element={<RoomAll />} />
         <Route 
-          path='/Room/:roomType' 
+          path='/Room/:linkPath' 
           element={<RoomDetail />}
         />
       </Routes>

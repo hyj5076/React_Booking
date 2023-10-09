@@ -11,7 +11,7 @@ function Submenu({ items, visible, baseLink }) {
                 <li>
                     <Link 
                     className="submenu-btn" 
-                    to={`${baseLink}/${subItem.roomType}`}>
+                    to={`${baseLink}/${subItem.linkPath}`}>
                         {subItem.title}
                     </Link>
                 </li>
