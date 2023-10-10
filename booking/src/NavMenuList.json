@@ -5,33 +5,34 @@
             "submenu": [
                 { 
                     "title": "전체객실타입",
-                    "roomType": "RoomAll"
+                    "linkPath": "RoomAll"
                 },
                 {   
                     "title": "더블룸",                    
-                    "roomType": "double"
+                    "linkPath": "double"
                 },
                 {   
                     "title": "트윈룸",
-                    "roomType": "twin"
+                    "linkPath": "twin"
                 },
                 {   
                     "title": "트리플룸",
-                    "roomType": "triple"
+                    "linkPath": "triple"
                 },
                 {   
                     "title": "패밀리룸",
-                    "roomType": "family"
+                    "linkPath": "family"
                 },
                 {   
                     "title": "단체룸",
-                    "roomType": "group"
+                    "linkPath": "group"
                 },
                 {   
                     "title": "키즈룸", 
-                    "roomType": "kids"
+                    "linkPath": "kids"
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             "title": "단체",
@@ -44,7 +45,8 @@
                     "title": "단체연수후기", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
 
@@ -58,7 +60,8 @@
                     "title": "바베큐장", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             
@@ -84,7 +87,8 @@
                     "title": "식당", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             
@@ -110,7 +114,8 @@
                     "title": "루프팔각탑", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         },
         {
             
@@ -136,7 +141,8 @@
                     "title": "이벤트", 
                     "url":""
                 }
-            ]
+            ],
+            "baseLink": "/Room"
         }
     ]
 }

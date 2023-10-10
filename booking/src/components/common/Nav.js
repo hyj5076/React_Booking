@@ -4,14 +4,14 @@ import './Nav.css';
 import { Link } from 'react-router-dom';
 import menuData from '../../NavMenuList.json';
 
-function Submenu({ items, visible }) {
+function Submenu({ items, visible, baseLink }) {
     return (
         <ul className="submenu" style={{ display: visible ? 'block' : 'none' }}>
             {items.map(subItem => (
                 <li>
                     <Link 
                     className="submenu-btn" 
-                    to={`/Room/${subItem.roomType}`}>
+                    to={`${baseLink}/${subItem.linkPath}`}>
                         {subItem.title}
                     </Link>
                 </li>
@@ -43,7 +43,8 @@ function Menu({ text }) {
                         <button>{menuItem.title}</button>
                         <Submenu 
                         items={menuItem.submenu} 
-                        visible={index === activeIndex} 
+                        visible={index === activeIndex}
+                        baseLink={menuItem.baseLink}
                         />
                     </li>
                 ))}

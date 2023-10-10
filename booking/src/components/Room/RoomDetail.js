@@ -75,8 +75,9 @@ function RoomAmenity({ amenity = [] }) {
 } */
 
 function RoomDetail() {
-    const { roomType } = useParams();
-    const room = roomsData[roomType] && roomsData[roomType][0];
+    const { linkPath } = useParams();
+    const room = roomsData[linkPath] && roomsData[linkPath][0];
+    //[Q] && 왼쪽값이 truthy하면 오른쪽 값이 반환됨
 
     // 데이터가 존재하지 않을 경우 처리
     if (!room) {
