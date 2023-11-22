@@ -1,10 +1,15 @@
 import "../App.css";
 import "./AboutUs.css";
 //import { Link } from 'react-router-dom';
+import Header from "../common/Header";
+import Footer from "../common/Footer";
+import SelectBox from "../common/SelectBox";
 
 function AboutUs() {
   return (
     <>
+      <Header />
+      <SelectBox />
       <section id="content">
         <div class="content_main">
           <div class="content_title center max_inner">
@@ -97,6 +102,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
