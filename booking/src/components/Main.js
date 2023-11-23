@@ -3,7 +3,7 @@ import "./Main.css";
 import { useState } from "react";
 import contentData from "../MainContentsList.json";
 import { Link } from "react-router-dom";
-import AboutUs from "./Notice/AboutUs";
+//import AboutUs from "./Notice/AboutUs.js";
 
 function MainTitle({ index }) {
   const MainTitleData = [
@@ -32,7 +32,7 @@ function MainTitle({ index }) {
         <div className="m_line inner"></div>
         <div className="main_txt">
           <p>{title.content}</p>
-          <Link to="/Notice/AboutUs">더보기</Link>
+          <Link to="/Notice/AboutUs.js">더보기</Link>
         </div>
       </div>
     </div>
