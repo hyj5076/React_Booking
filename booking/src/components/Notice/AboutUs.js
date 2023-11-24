@@ -57,11 +57,25 @@ function AboutUsContents({
       <div class="content_aboutus">
         <div className={`aboutus_list_${layout} inner`}>
           <div class="top">
-            <h2>{number}</h2>
-            <div class={`top_${layout}`}>
-              <div class="line"></div>
-              <h3>{title}</h3>
-            </div>
+            {layout === "left" && (
+              <>
+                <h2>{number}</h2>
+                <div class={`top_${layout}`}>
+                  <div class="line"></div>
+                  <h3>{title}</h3>
+                </div>
+              </>
+            )}
+
+            {layout === "right" && (
+              <>
+                <div class={`top_${layout}`}>
+                  <div class="line"></div>
+                  <h3>{title}</h3>
+                </div>
+                <h2>{number}</h2>
+              </>
+            )}
           </div>
           <div class="bottom">
             <div class="bottom_img">
