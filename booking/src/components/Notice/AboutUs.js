@@ -52,15 +52,13 @@ function AboutUsContents({
   description,
   layout,
 }) {
-  const topClass = `top_${layout}`;
-
   return (
     <>
       <div class="content_aboutus">
         <div className={`aboutus_list_${layout} inner`}>
           <div class="top">
             <h2>{number}</h2>
-            <div class={topClass}>
+            <div class={`top_${layout}`}>
               <div class="line"></div>
               <h3>{title}</h3>
             </div>
@@ -92,8 +90,8 @@ function AboutUs() {
       <section id="content">
         <div class="content_main">
           <div class="content_title_sub">
-            {<AboutUsTitle />}
-            {<AboutUsHeadline />}
+            <AboutUsTitle />
+            <AboutUsHeadline />
           </div>
 
           <div id="noticeList"></div>

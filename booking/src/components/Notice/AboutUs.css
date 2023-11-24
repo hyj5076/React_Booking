@@ -93,7 +93,8 @@
 }
 
 .top_right {
-  padding-right: 10px;
+  padding-left: 10px;
+  text-align: right;
 }
 
 .top .line {
