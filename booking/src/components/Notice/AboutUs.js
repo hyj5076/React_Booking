@@ -1,9 +1,9 @@
 import "../App.css";
 import "./AboutUs.css";
-//import { Link } from "react-router-dom";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import SelectBox from "../common/SelectBox";
+import AboutUsData from "../../AboutUsList.json";
 
 function AboutUsTitle() {
   return (
@@ -42,59 +42,39 @@ function AboutUsHeadline() {
   );
 }
 
-function AboutUsContents() {
+function AboutUsContents({
+  number,
+  title,
+  englishTitle,
+  imageSrc,
+  imageAlt,
+  subTitle,
+  description,
+  layout,
+}) {
+  const topClass = `top_${layout}`;
+
   return (
     <>
       <div class="content_aboutus">
-        <div class="aboutus_list inner">
+        <div className={`aboutus_list_${layout} inner`}>
           <div class="top">
-            <h2>01</h2>
-            <div class="top_left">
+            <h2>{number}</h2>
+            <div class={topClass}>
               <div class="line"></div>
-              <h3>옥상 팔각정</h3>
+              <h3>{title}</h3>
             </div>
           </div>
           <div class="bottom">
             <div class="bottom_img">
-              <img src="/images/sub/outdoor_octagon.jfif" alt="옥상 팔각정" />
-              <p class="english_left">THE OCTAGON PAVILION ON THE ROOFTOP</p>
+              <img src={imageSrc} alt={imageAlt} />
+              <p class={`english_${layout}`}>{englishTitle}</p>
             </div>
             <div class="bottom_txt">
               <p>
-                <span>옥상 팔각정은 팔각루프탑으로 운영 예정입니다.</span>
+                <b>{subTitle}</b>
               </p>
-              <p>
-                체계적인 호텔 시스템과 편리한 시설, 그리고 호텔의 세심한
-                서비스가 더해져 최고의 만족을 안겨드립니다.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="graybox"></div>
-      </div>
-
-      <div class="content_aboutus">
-        <div class="aboutus_list_right inner">
-          <div class="top">
-            <div class="top_right">
-              <div class="line"></div>
-              <h3>정육식당</h3>
-            </div>
-            <h2>02</h2>
-          </div>
-          <div class="bottom">
-            <div class="bottom_img">
-              <img src="/images/sub/about_beef.JPG" alt="정육식당" />
-              <p class="english_right">THE MEAT RESTAURANT IN THE 8FORE</p>
-            </div>
-            <div class="bottom_txt right">
-              <p>
-                <span>시설 내 온라인 판매가격 수준의 도소매 정육식당</span>
-              </p>
-              <p>
-                체계적인 호텔 시스템과 편리한 시설, 그리고 호텔의 세심한
-                서비스가 더해져 최고의 만족을 안겨드립니다.
-              </p>
+              <p>{description}</p>
             </div>
           </div>
         </div>
@@ -118,7 +98,9 @@ function AboutUs() {
 
           <div id="noticeList"></div>
 
-          {<AboutUsContents />}
+          {AboutUsData.map((section, index) => (
+            <AboutUsContents key={index} {...section} />
+          ))}
         </div>
       </section>
       <Footer />
