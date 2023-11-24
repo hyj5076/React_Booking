@@ -4,42 +4,42 @@
 */
 
 #header {
-    position: fixed;
-    width: 100%;
-    background: rgba(255,255,255,0.3);
-    z-index: 9999;
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 9999;
 }
 
 #header h1 img {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 .container {
-    height: 50px;
-    border-bottom: rgba(255,255,255,0.6) 1px solid;
+  height: 50px;
+  border-bottom: rgba(255, 255, 255, 0.6) 1px solid;
 }
 
 .spacebetween {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-    /* reserv1.2 액티브 효과 주기*/
+/* reserv1.2 액티브 효과 주기*/
 
-    #header0 {
-        position: fixed;
-        width: 100%;
-        background: rgba(255,255,255,0.8);
-        z-index: 9999;
-        transition: 0.5s;
-        transform: translateY(0);
-    }
+#header0 {
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  transition: 0.5s;
+  transform: translateY(0);
+}
 
-    #header0.active {
-        transform: translateY(-51px);
-    }
+#header0.active {
+  transform: translateY(-51px);
+}
 
 /* .container {
     border-bottom: rgba(0,0,0,0.6) 1px solid;

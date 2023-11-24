@@ -1,148 +1,144 @@
 {
-    "NavMenuData" : [
+  "NavMenuData": [
+    {
+      "title": "객실",
+      "submenu": [
         {
-            "title": "객실",
-            "submenu": [
-                { 
-                    "title": "전체객실타입",
-                    "linkPath": "RoomAll"
-                },
-                {   
-                    "title": "더블룸",                    
-                    "linkPath": "double"
-                },
-                {   
-                    "title": "트윈룸",
-                    "linkPath": "twin"
-                },
-                {   
-                    "title": "트리플룸",
-                    "linkPath": "triple"
-                },
-                {   
-                    "title": "패밀리룸",
-                    "linkPath": "family"
-                },
-                {   
-                    "title": "단체룸",
-                    "linkPath": "group"
-                },
-                {   
-                    "title": "키즈룸", 
-                    "linkPath": "kids"
-                }
-            ],
-            "baseLink": "/Room"
+          "title": "전체객실타입",
+          "linkPath": "RoomAll"
         },
         {
-            "title": "단체",
-            "submenu": [
-                {   
-                    "title": "단체견적문의",
-                    "url":"" 
-                },
-                {   
-                    "title": "단체연수후기", 
-                    "url":""
-                }
-            ],
-            "baseLink": "/Room"
+          "title": "더블룸",
+          "linkPath": "double"
         },
         {
-
-            "title": "글램핑",
-            "submenu": [
-                {   
-                    "title": "글램핑",
-                    "url":"" 
-                },
-                {   
-                    "title": "바베큐장", 
-                    "url":""
-                }
-            ],
-            "baseLink": "/Room"
+          "title": "트윈룸",
+          "linkPath": "twin"
         },
         {
-            
-            "title": "실내시설",
-            "submenu": [
-                {   
-                    "title": "전체실내시설",
-                    "url":"" 
-                },
-                {   
-                    "title": "소강당/노래방",
-                    "url":"" 
-                },
-                {   
-                    "title": "세미나실",
-                    "url":"" 
-                },
-                {   
-                    "title": "탁구장/당구장",
-                    "url":"" 
-                },
-                {   
-                    "title": "식당", 
-                    "url":""
-                }
-            ],
-            "baseLink": "/Room"
+          "title": "트리플룸",
+          "linkPath": "triple"
         },
         {
-            
-            "title": "야외시설",
-            "submenu": [
-                {   
-                    "title": "전체야외시설",
-                    "url":"" 
-                },
-                {   
-                    "title": "글램핑/바베큐장",
-                    "url":"" 
-                },
-                {   
-                    "title": "소규모운동장",
-                    "url":"" 
-                },
-                {   
-                    "title": "체육대회소품",
-                    "url":"" 
-                },
-                {   
-                    "title": "루프팔각탑", 
-                    "url":""
-                }
-            ],
-            "baseLink": "/Room"
+          "title": "패밀리룸",
+          "linkPath": "family"
         },
         {
-            
-            "title": "이용안내",
-            "submenu": [
-                {   
-                    "title": "에잇포레 소개",
-                    "url":"" 
-                },
-                {   
-                    "title": "오시는길",
-                    "url":"" 
-                },
-                {   
-                    "title": "배치도&갤러리",
-                    "url":"" 
-                },
-                {   
-                    "title": "주변놀거리",
-                    "url":"" 
-                },
-                {   
-                    "title": "이벤트", 
-                    "url":""
-                }
-            ],
-            "baseLink": "/Room"
+          "title": "단체룸",
+          "linkPath": "group"
+        },
+        {
+          "title": "키즈룸",
+          "linkPath": "kids"
         }
-    ]
+      ],
+      "baseLink": "/Room"
+    },
+    {
+      "title": "단체",
+      "submenu": [
+        {
+          "title": "단체견적문의",
+          "url": ""
+        },
+        {
+          "title": "단체연수후기",
+          "url": ""
+        }
+      ],
+      "baseLink": "/Room"
+    },
+    {
+      "title": "글램핑",
+      "submenu": [
+        {
+          "title": "글램핑",
+          "url": ""
+        },
+        {
+          "title": "바베큐장",
+          "url": ""
+        }
+      ],
+      "baseLink": "/Room"
+    },
+    {
+      "title": "실내시설",
+      "submenu": [
+        {
+          "title": "전체실내시설",
+          "url": ""
+        },
+        {
+          "title": "소강당/노래방",
+          "url": ""
+        },
+        {
+          "title": "세미나실",
+          "url": ""
+        },
+        {
+          "title": "탁구장/당구장",
+          "url": ""
+        },
+        {
+          "title": "식당",
+          "url": ""
+        }
+      ],
+      "baseLink": "/Room"
+    },
+    {
+      "title": "야외시설",
+      "submenu": [
+        {
+          "title": "전체야외시설",
+          "url": ""
+        },
+        {
+          "title": "글램핑/바베큐장",
+          "url": ""
+        },
+        {
+          "title": "소규모운동장",
+          "url": ""
+        },
+        {
+          "title": "체육대회소품",
+          "url": ""
+        },
+        {
+          "title": "루프팔각탑",
+          "url": ""
+        }
+      ],
+      "baseLink": "/Room"
+    },
+    {
+      "title": "이용안내",
+      "submenu": [
+        {
+          "title": "에잇포레 소개",
+          "url": ""
+        },
+        {
+          "title": "오시는길",
+          "url": ""
+        },
+        {
+          "title": "배치도&갤러리",
+          "url": ""
+        },
+        {
+          "title": "주변놀거리",
+          "url": ""
+        },
+        {
+          "title": "이벤트",
+          "url": ""
+        }
+      ],
+      "baseLink": "/Room"
+    }
+  ]
 }
