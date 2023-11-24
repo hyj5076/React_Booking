@@ -55,7 +55,7 @@ function AboutUsContents({
   return (
     <>
       <div class="content_aboutus">
-        <div className={`aboutus_list_${layout} inner`}>
+        <div className={`aboutus_list_${layout}`}>
           <div class="top">
             {layout === "left" && (
               <>
@@ -66,7 +66,6 @@ function AboutUsContents({
                 </div>
               </>
             )}
-
             {layout === "right" && (
               <>
                 <div class={`top_${layout}`}>
@@ -82,7 +81,7 @@ function AboutUsContents({
               <img src={imageSrc} alt={imageAlt} />
               <p class={`english_${layout}`}>{englishTitle}</p>
             </div>
-            <div class="bottom_txt">
+            <div class={`bottom_txt_${layout}`}>
               <p>
                 <b>{subTitle}</b>
               </p>

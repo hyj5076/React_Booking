@@ -118,8 +118,14 @@
   background-position: center;
 }
 
-.bottom_txt {
+.bottom_txt_left {
   padding-top: 10px;
+  padding-right: 10px;
+}
+
+.bottom_txt_right {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .bottom_txt p span {
