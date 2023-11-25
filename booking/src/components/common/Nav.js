@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../App.css";
 import "./Nav.css";
 import { Link } from "react-router-dom";
-import menuData from "../../NavMenuList.json";
+import menuData from "../data/NavMenuList.json";
 
 function Submenu({ items, visible, baseLink }) {
   return (

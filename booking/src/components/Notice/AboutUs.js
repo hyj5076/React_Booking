@@ -3,7 +3,7 @@ import "./AboutUs.css";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import SelectBox from "../common/SelectBox";
-import AboutUsData from "../../AboutUsList.json";
+import AboutUsData from "../data/AboutUsList.json";
 
 function AboutUsTitle() {
   return (

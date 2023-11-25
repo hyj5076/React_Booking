@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import "../App.css";
 import "./RoomDetail.css";
 import { Link } from "react-router-dom";
-import roomsData from "../../RoomDetail.json";
+import roomsData from "../data/RoomDetail.json";
 import Header from "../common/Header";
 import SelectBox from "../common/SelectBox";
 

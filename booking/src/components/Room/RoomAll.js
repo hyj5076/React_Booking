@@ -2,7 +2,7 @@ import "../App.css";
 import "./RoomAll.css";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
-import roomTypeData from "../../RoomTypeList.json";
+import roomTypeData from "../data/RoomTypeList.json";
 import SelectBox from "../common/SelectBox";
 
 function RoomTypeList({ rooms }) {

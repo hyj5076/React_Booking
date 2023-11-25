@@ -1,8 +1,8 @@
 import "./App.css";
 import "./Main.css";
 import { useState } from "react";
-import contentData from "../MainContentsList.json";
 import { Link } from "react-router-dom";
+import contentData from "./data/MainContentsList.json";
 
 function MainTitle({ index }) {
   const MainTitleData = [
@@ -56,7 +56,9 @@ function MainContentsList({ contents }) {
               </div>
               <div className="more">
                 <p>
-                  <a href="sub/notice_attraction.html">{txt.alt} 자세히보기</a>
+                  <Link href="sub/notice_attraction.html">
+                    {txt.alt} 자세히보기
+                  </Link>
                 </p>
               </div>
             </div>
@@ -111,7 +113,7 @@ function Main() {
         <div className="booking">
           <div className="inner">
             <div className="btn">
-              {<a href="sub/room_1reserv_1.2.html">예약하기</a>}
+              <Link>예약하기</Link>
             </div>
           </div>
         </div>
