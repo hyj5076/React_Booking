@@ -83,7 +83,7 @@ function Nav() {
               <Link to="/Log/Member">로그인</Link>
             </button>
             <button>
-              <Link>비회원예약</Link>
+              <Link to="/Log/NonMember">비회원예약</Link>
             </button>
           </div>
         </div>

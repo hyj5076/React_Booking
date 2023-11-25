@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Gallery from "./Notice/Gallery";
 import GroupContact from "./Group/Contact";
 import Member from "./Log/Member";
+import NonMember from "./Log/NonMember";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/Notice/Gallery" element={<Gallery />} />
         <Route path="/Group/Contact" element={<GroupContact />} />
         <Route path="/Log/Member" element={<Member />} />
+        <Route path="/Log/NonMember" element={<NonMember />} />
       </Routes>
     </Router>
   );
