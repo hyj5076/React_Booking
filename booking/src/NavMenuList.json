@@ -39,14 +39,14 @@
       "submenu": [
         {
           "title": "단체견적문의",
-          "url": ""
+          "linkPath": "Contact"
         },
         {
           "title": "단체연수후기",
-          "url": ""
+          "linkPath": "Review"
         }
       ],
-      "baseLink": "/Room"
+      "baseLink": "/Group"
     },
     {
       "title": "글램핑",
