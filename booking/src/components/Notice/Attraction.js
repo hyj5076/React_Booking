@@ -1,8 +1,8 @@
 import "../App.css";
+import "./Attraction.css";
 import Footer from "../common/Footer";
 import Header from "../common/Header";
 import SelectBox from "../common/SelectBox";
-import "./Attraction.css";
 
 function AttractionTitle() {
   return (
