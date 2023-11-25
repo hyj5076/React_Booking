@@ -14,6 +14,8 @@ import Gallery from "./Notice/Gallery";
 import GroupContact from "./Group/Contact";
 import Member from "./Log/Member";
 import NonMember from "./Log/NonMember";
+import Indoor from "./Facility/Indoor";
+import Outdoor from "./Facility/Outdoor";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
         <Route path="/Group/Contact" element={<GroupContact />} />
         <Route path="/Log/Member" element={<Member />} />
         <Route path="/Log/NonMember" element={<NonMember />} />
+        <Route path="/Facility/:linkPath" element={<Indoor />} />
+        <Route path="/Facility/:linkPath" element={<Outdoor />} />
       </Routes>
     </Router>
   );
