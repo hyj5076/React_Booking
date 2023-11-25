@@ -79,8 +79,12 @@ function Nav() {
         <div className="nav_title">
           <h2>reservation</h2>
           <div className="nav_login">
-            <button>로그인</button>
-            <button>비회원예약</button>
+            <button>
+              <Link to="/Log/Member">로그인</Link>
+            </button>
+            <button>
+              <Link>비회원예약</Link>
+            </button>
           </div>
         </div>
 
