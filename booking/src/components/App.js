@@ -7,6 +7,7 @@ import RoomAll from "./Room/RoomAll";
 import RoomDetail from "./Room/RoomDetail";
 import AboutUs from "./Notice/AboutUs";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Attraction from "./Notice/Attraction";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Room/RoomAll" element={<RoomAll />} />
         <Route path="/Room/:linkPath" element={<RoomDetail />} />
         <Route path="/Notice/AboutUs" element={<AboutUs />} />
+        <Route path="/Notice/Attraction" element={<Attraction />} />
       </Routes>
     </Router>
   );

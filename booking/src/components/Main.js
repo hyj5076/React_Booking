@@ -3,7 +3,6 @@ import "./Main.css";
 import { useState } from "react";
 import contentData from "../MainContentsList.json";
 import { Link } from "react-router-dom";
-//import AboutUs from "./Notice/AboutUs.js";
 
 function MainTitle({ index }) {
   const MainTitleData = [
