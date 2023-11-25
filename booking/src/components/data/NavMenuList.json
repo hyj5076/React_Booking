@@ -75,7 +75,7 @@
         },
         {
           "title": "세미나실",
-          "linkPath": "ceminar"
+          "linkPath": "seminar"
         },
         {
           "title": "탁구장/당구장",
@@ -108,8 +108,8 @@
           "linkPath": "sports"
         },
         {
-          "title": "루프팔각탑",
-          "linkPath": "AboutUs"
+          "title": "루프팔각정",
+          "linkPath": "octagon"
         }
       ],
       "baseLink": "/Facility"
