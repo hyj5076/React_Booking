@@ -8,6 +8,7 @@ import RoomDetail from "./Room/RoomDetail";
 import AboutUs from "./Notice/AboutUs";
 import Event from "./Notice/Event";
 import Attraction from "./Notice/Attraction";
+import Way from "./Notice/Way";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Notice/AboutUs" element={<AboutUs />} />
         <Route path="/Notice/Attraction" element={<Attraction />} />
         <Route path="/Notice/Event" element={<Event />} />
+        <Route path="/Notice/Way" element={<Way />} />
       </Routes>
     </Router>
   );
