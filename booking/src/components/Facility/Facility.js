@@ -1,38 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../App.css";
 import "./Facility.css";
 import Header from "../common/Header";
 import SelectBox from "../common/SelectBox";
 import Footer from "../common/Footer";
+import indoorData from "../data/IndoorList.json";
 
-function FacilityTitle() {
+function FacilityTitle({ title }) {
   return (
     <>
       <div class="title_others">
         <div class="border"></div>
         <div>
-          <h3>Auditorium/Singing</h3>
-          <p>
-            에잇포레에서는 모던과 클래식, 도시와 자연이 공존하는
-            <br /> 안락한 휴식의 시간을 선물할 것입니다.
-          </p>
+          <h3>{title.title}</h3>
+          <p>{title.description}</p>
         </div>
       </div>
     </>
   );
 }
 
-function FacilityView() {
+function FacilityView({ view }) {
   return (
     <>
       <div class="content_img">
-        <img src="/images/sub/indoor_audi.jpg" alt="소강당" />
+        <img src={view.image} alt={view.type} />
       </div>
     </>
   );
 }
 
-function FacilityButton() {
+function FacilityButton({ btn }) {
   return (
     <>
       <div class="content_btn type_others">
@@ -40,14 +38,14 @@ function FacilityButton() {
           <Link>공유하기</Link>
         </div>
         <div class="btn">
-          <Link>예약하기</Link>
+          <Link to={btn}>예약하기</Link>
         </div>
       </div>
     </>
   );
 }
 
-function FacilitySpec() {
+function FacilitySpec({ spec }) {
   return (
     <>
       <div class="others_spec">
@@ -70,7 +68,7 @@ function FacilitySpec() {
   );
 }
 
-function FacilityNotice() {
+function FacilityNotice({ notice }) {
   return (
     <>
       {/* <div class="others_notice">
@@ -87,6 +85,9 @@ function FacilityNotice() {
 }
 
 function Facility() {
+  const { linkPath } = useParams();
+  const type = indoorData[linkPath] && indoorData[linkPath][0];
+
   return (
     <>
       <Header />
@@ -94,11 +95,11 @@ function Facility() {
       <section id="content">
         <div class="inner">
           <div class="content_main">
-            <FacilityTitle />
-            <FacilityView />
-            <FacilityButton />
-            <FacilitySpec />
-            <FacilityNotice />
+            <FacilityTitle title={type.title} />
+            <FacilityView view={type.view} />
+            <FacilityButton btn={type.btn} />
+            <FacilitySpec spec={type.spec} />
+            <FacilityNotice notice={type.notice} />
           </div>
         </div>
       </section>
