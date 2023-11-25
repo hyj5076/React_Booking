@@ -10,6 +10,7 @@ import Event from "./Notice/Event";
 import Attraction from "./Notice/Attraction";
 import Way from "./Notice/Way";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Gallery from "./Notice/Gallery";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/Notice/Attraction" element={<Attraction />} />
         <Route path="/Notice/Event" element={<Event />} />
         <Route path="/Notice/Way" element={<Way />} />
+        <Route path="/Notice/Gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );
