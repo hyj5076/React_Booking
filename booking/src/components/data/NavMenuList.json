@@ -53,11 +53,11 @@
       "submenu": [
         {
           "title": "글램핑",
-          "url": ""
+          "linkPath": "AboutUs"
         },
         {
           "title": "바베큐장",
-          "url": ""
+          "linkPath": "AboutUs"
         }
       ],
       "baseLink": "/Room"
@@ -67,52 +67,52 @@
       "submenu": [
         {
           "title": "전체실내시설",
-          "url": ""
+          "linkPath": "indoor"
         },
         {
           "title": "소강당/노래방",
-          "url": ""
+          "linkPath": "singing"
         },
         {
           "title": "세미나실",
-          "url": ""
+          "linkPath": "ceminar"
         },
         {
           "title": "탁구장/당구장",
-          "url": ""
+          "linkPath": "tennis"
         },
         {
           "title": "식당",
-          "url": ""
+          "linkPath": "restaurant"
         }
       ],
-      "baseLink": "/Room"
+      "baseLink": "/Facility"
     },
     {
       "title": "야외시설",
       "submenu": [
         {
           "title": "전체야외시설",
-          "url": ""
+          "linkPath": "outdoor"
         },
         {
           "title": "글램핑/바베큐장",
-          "url": ""
+          "linkPath": "glamping"
         },
         {
           "title": "소규모운동장",
-          "url": ""
+          "linkPath": "playground"
         },
         {
           "title": "체육대회소품",
-          "url": ""
+          "linkPath": "sports"
         },
         {
           "title": "루프팔각탑",
-          "url": ""
+          "linkPath": "AboutUs"
         }
       ],
-      "baseLink": "/Room"
+      "baseLink": "/Facility"
     },
     {
       "title": "이용안내",

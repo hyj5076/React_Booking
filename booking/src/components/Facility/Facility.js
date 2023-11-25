@@ -26,7 +26,7 @@ function FacilityView() {
   return (
     <>
       <div class="content_img">
-        <img src="/booking/images/sub/indoor_audi.jpg" alt="소강당" />
+        <img src="/images/sub/indoor_audi.jpg" alt="소강당" />
       </div>
     </>
   );
@@ -37,10 +37,10 @@ function FacilityButton() {
     <>
       <div class="content_btn type_others">
         <div class="btn">
-          <Link href="#">공유하기</Link>
+          <Link>공유하기</Link>
         </div>
         <div class="btn">
-          <Link href="/booking/sub/room_1reserv_1.2.html">예약하기</Link>
+          <Link>예약하기</Link>
         </div>
       </div>
     </>
