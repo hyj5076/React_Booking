@@ -119,7 +119,7 @@
       "submenu": [
         {
           "title": "에잇포레 소개",
-          "url": ""
+          "linkPath": "AboutUs"
         },
         {
           "title": "오시는길",
@@ -131,14 +131,14 @@
         },
         {
           "title": "주변놀거리",
-          "url": ""
+          "linkPath": "Attraction"
         },
         {
           "title": "이벤트",
-          "url": ""
+          "linkPath": "AboutUs"
         }
       ],
-      "baseLink": "/Room"
+      "baseLink": "/Notice"
     }
   ]
 }
