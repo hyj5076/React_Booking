@@ -5,7 +5,26 @@
       "title": "Auditorium & Singing Room",
       "description": "에잇포레에서는 모던과 클래식, 도시와 자연이 공존하는 안락한 휴식의 시간을 선물할 것입니다.",
       "image": "/images/sub/indoor_Audi.jpg",
-      "spec": []
+      "spec": [
+        [
+          {
+            "key": "location",
+            "spec": "2층"
+          },
+          {
+            "key": "time",
+            "spec": "9:00 - 22:00"
+          },
+          {
+            "key": "amenity",
+            "spec": "빔프로젝트, 레이저포인터"
+          },
+          {
+            "key": "period",
+            "spec": "상시"
+          }
+        ]
+      ]
     }
   ],
   "seminar": [
@@ -14,7 +33,26 @@
       "title": "Seminar Room",
       "description": "에잇포레에서는 모던과 클래식, 도시와 자연이 공존하는 안락한 휴식의 시간을 선물할 것입니다.",
       "image": "/images/sub/indoor_seminar.jpg",
-      "spec": []
+      "spec": [
+        [
+          {
+            "key": "location",
+            "spec": "2층"
+          },
+          {
+            "key": "time",
+            "spec": "9:00 - 22:00"
+          },
+          {
+            "key": "amenity",
+            "spec": "빔프로젝트, 레이저포인터"
+          },
+          {
+            "key": "period",
+            "spec": "상시"
+          }
+        ]
+      ]
     }
   ],
   "tennis": [
@@ -23,7 +61,26 @@
       "title": "Table Tennis & Pocket Ball",
       "description": "에잇포레에서는 모던과 클래식, 도시와 자연이 공존하는 안락한 휴식의 시간을 선물할 것입니다.",
       "image": "/images/sub/indoor_seminar.jpg",
-      "spec": []
+      "spec": [
+        [
+          {
+            "key": "location",
+            "spec": "2층"
+          },
+          {
+            "key": "time",
+            "spec": "9:00 - 22:00"
+          },
+          {
+            "key": "amenity",
+            "spec": "빔프로젝트, 레이저포인터"
+          },
+          {
+            "key": "period",
+            "spec": "상시"
+          }
+        ]
+      ]
     }
   ],
   "restaurant": [
@@ -32,7 +89,26 @@
       "title": "Restaurant",
       "description": "에잇포레에서는 모던과 클래식, 도시와 자연이 공존하는 안락한 휴식의 시간을 선물할 것입니다.",
       "image": "/images/sub/indoor_seminar.jpg",
-      "spec": []
+      "spec": [
+        [
+          {
+            "key": "location",
+            "spec": "2층"
+          },
+          {
+            "key": "time",
+            "spec": "9:00 - 22:00"
+          },
+          {
+            "key": "amenity",
+            "spec": "빔프로젝트, 레이저포인터"
+          },
+          {
+            "key": "period",
+            "spec": "상시"
+          }
+        ]
+      ]
     }
   ]
 }
