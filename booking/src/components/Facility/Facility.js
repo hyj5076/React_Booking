@@ -79,7 +79,7 @@ function FacilitySpec({ spec }) {
 
 function Facility() {
   const { linkPath } = useParams();
-  // indoorData와 outdoorData에서 해당하는 데이터를 찾음
+
   const facilityInfo = indoorData[linkPath]
     ? indoorData[linkPath][0]
     : outdoorData[linkPath]

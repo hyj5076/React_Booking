@@ -67,7 +67,7 @@
       "submenu": [
         {
           "title": "전체실내시설",
-          "linkPath": "indoor"
+          "linkPath": "FacilityAll"
         },
         {
           "title": "소강당/노래방",
@@ -93,7 +93,7 @@
       "submenu": [
         {
           "title": "전체야외시설",
-          "linkPath": "outdoor"
+          "linkPath": "FacilityAll"
         },
         {
           "title": "글램핑/바베큐장",

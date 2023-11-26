@@ -15,6 +15,7 @@ import GroupContact from "./Group/Contact";
 import Member from "./Log/Member";
 import NonMember from "./Log/NonMember";
 import Facility from "./Facility/Facility";
+import FacilityAll from "./Facility/FacilityAll";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/Log/Member" element={<Member />} />
         <Route path="/Log/NonMember" element={<NonMember />} />
         <Route path="/Facility/:linkPath" element={<Facility />} />
+        <Route path="/Facility/FacilityAll" element={<FacilityAll />} />
       </Routes>
     </Router>
   );
