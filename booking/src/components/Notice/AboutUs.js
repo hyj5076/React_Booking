@@ -55,7 +55,7 @@ function AboutUsContents({
   return (
     <>
       <div class="content_aboutus">
-        <div className={`aboutus_list_${layout}`}>
+        <div className={`aboutus_list_${layout} max_inner`}>
           <div class="top">
             {layout === "left" && (
               <>
