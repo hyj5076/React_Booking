@@ -1,10 +1,11 @@
-import { useParams } from "react-router-dom";
 import "../App.css";
 import "./Facility.css";
+import { useParams } from "react-router-dom";
 import Header from "../common/Header";
 import SelectBox from "../common/SelectBox";
 import Footer from "../common/Footer";
 import indoorData from "../data/IndoorList.json";
+import outdoorData from "../data/OutdoorList.json";
 
 function FacilityTitle({ title, description }) {
   return (
@@ -78,9 +79,14 @@ function FacilitySpec({ spec }) {
 
 function Facility() {
   const { linkPath } = useParams();
-  const type = indoorData[linkPath] ? indoorData[linkPath][0] : null;
+  // indoorData와 outdoorData에서 해당하는 데이터를 찾음
+  const facilityInfo = indoorData[linkPath]
+    ? indoorData[linkPath][0]
+    : outdoorData[linkPath]
+    ? outdoorData[linkPath][0]
+    : null;
 
-  if (!type) return <p>Loading...</p>;
+  if (!facilityInfo) return <p>Not Found</p>;
 
   return (
     <>
@@ -89,11 +95,14 @@ function Facility() {
       <section id="content">
         <div className="inner">
           <div className="content_main">
-            <FacilityTitle title={type.title} description={type.description} />
-            <FacilityView image={type.image} type={type.type} />
-            {/* FacilityButton은 데이터 구조에 맞게 수정 필요 */}
-            <FacilitySpec spec={type.spec[0]} />
-            {/* FacilityNotice는 필요에 따라 추가 */}
+            <FacilityTitle
+              title={facilityInfo.title}
+              description={facilityInfo.description}
+            />
+            <FacilityView image={facilityInfo.image} type={facilityInfo.type} />
+            {/* 다른 하위 컴포넌트들에도 필요한 정보 전달 */}
+            <FacilitySpec spec={facilityInfo.spec[0]} />
+            {/* FacilityButton, FacilityNotice 등 필요에 따라 추가 */}
           </div>
         </div>
       </section>
