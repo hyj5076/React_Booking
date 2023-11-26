@@ -2,8 +2,8 @@ import "../App.css";
 import "./RoomAll.css";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
-import roomTypeData from "../data/RoomTypeList.json";
 import SelectBox from "../common/SelectBox";
+import roomTypeData from "../data/RoomTypeList.json";
 
 function RoomTypeList({ rooms }) {
   return (
@@ -34,7 +34,7 @@ function RoomAll() {
       <Header />
       <SelectBox />
       <section id="content">
-        <div id="roomList" class="inner">
+        <div id="roomList" className="inner">
           <RoomTypeList rooms={roomTypeData.RoomTypeData} />
         </div>
       </section>

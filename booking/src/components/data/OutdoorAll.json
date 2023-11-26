@@ -1,44 +1,30 @@
 {
   "OutdoorAllData": [
     {
-      "title": "Double Room",
+      "title": "Glamping & BBQ",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
       "image": "/images/sub/room_double.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "left"
     },
     {
-      "title": "Twin Room",
+      "title": "Playground",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
       "image": "/images/sub/room_twin.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "right"
     },
     {
-      "title": "Triple Room",
+      "title": "Sports Items",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
       "image": "/images/sub/room_triple.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "left"
     },
     {
-      "title": "Family Room",
+      "title": "The Octagonal Pavilion",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
       "image": "/images/sub/room_family.jpg",
-      "link": "/sub/room_detail.html",
-      "alignment": "right"
-    },
-    {
-      "title": "Room for Group",
-      "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
-      "image": "/images/sub/room_forgroup.jpg",
-      "link": "/sub/room_detail.html",
-      "alignment": "left"
-    },
-    {
-      "title": "Kids Room",
-      "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
-      "image": "/images/sub/room_kids.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "right"
     }
