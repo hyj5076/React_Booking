@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import "../App.css";
 import "./Nav.css";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import menuData from "../data/NavMenuList.json";
 

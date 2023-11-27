@@ -1,7 +1,6 @@
 import "../App.css";
 import "./RoomDetail.css";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import roomsData from "../data/RoomDetail.json";
 import Header from "../common/Header";
 import SelectBox from "../common/SelectBox";
@@ -77,6 +76,7 @@ function RoomDetail() {
   const { linkPath } = useParams();
   const room = roomsData[linkPath] && roomsData[linkPath][0];
   //[Q] && 왼쪽값이 truthy하면 오른쪽 값이 반환됨
+  console.log("linkPath:", linkPath);
 
   // 데이터가 존재하지 않을 경우 처리
   if (!room) {

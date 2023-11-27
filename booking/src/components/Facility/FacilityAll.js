@@ -1,17 +1,17 @@
 import "../App.css";
 import "./FacilityAll.css";
+import { Link, useLocation } from "react-router-dom";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import SelectBox from "../common/SelectBox";
 import indoorAllData from "../data/IndoorAll.json";
 import outdoorAllData from "../data/OutdoorAll.json";
-import { Link, useParams } from "react-router-dom";
 
 function FacilityList({ type }) {
   return (
     <>
-      {type.map((site) => (
-        <div className="content_list">
+      {type.map((site, index) => (
+        <div key={index} className="content_list">
           <h3 className={site.alignment}>{site.title}</h3>
           <div className="content_list_txt padding-10">
             <p className={site.alignment}>{site.description}</p>
@@ -31,11 +31,14 @@ function FacilityList({ type }) {
 }
 
 function FacilityAll() {
-  const { linkPath } = useParams();
+  const location = useLocation();
+  const pathSegments = location.pathname.split("/");
+  const lastSegment = pathSegments[pathSegments.length - 1];
+
   const dataToShow =
-    linkPath === "outdoor"
-      ? outdoorAllData.OutdoorAllData
-      : indoorAllData.IndoorAllData;
+    lastSegment === "indoor"
+      ? indoorAllData.IndoorAllData
+      : outdoorAllData.OutdoorAllData;
 
   return (
     <>

@@ -3,28 +3,28 @@
     {
       "title": "Auditorium & Singing Room",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
-      "image": "/images/sub/room_double.jpg",
+      "image": "/images/sub/indoor_Audi.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "left"
     },
     {
       "title": "Seminar Room",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
-      "image": "/images/sub/room_twin.jpg",
+      "image": "/images/training.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "right"
     },
     {
       "title": "Table Tennis & Pocket Ball",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
-      "image": "/images/sub/room_triple.jpg",
+      "image": "/images/sub/indoor_tennis.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "left"
     },
     {
       "title": "Restaurant",
       "description": "감각적인 인테리어와 특별한 여유를 느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.",
-      "image": "/images/sub/room_family.jpg",
+      "image": "/images/restaurant.jpg",
       "link": "/sub/room_detail.html",
       "alignment": "right"
     }
