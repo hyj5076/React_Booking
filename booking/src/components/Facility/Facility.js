@@ -11,7 +11,7 @@ function FacilityTitle({ title, description }) {
   return (
     <div className="title_others">
       <div className="border"></div>
-      <div>
+      <div className="padding-10">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

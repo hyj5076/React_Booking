@@ -54,3 +54,7 @@
 .content_list .bi-arrow-right-short {
   font-size: 3rem;
 }
+
+.padding-10 > p {
+  padding: 10px 0;
+}

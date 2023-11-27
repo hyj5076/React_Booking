@@ -43,7 +43,8 @@ function App() {
         <Route path="/Log/Member" element={<Member />} />
         <Route path="/Log/NonMember" element={<NonMember />} />
         <Route path="/Facility/:linkPath" element={<Facility />} />
-        <Route path="/Facility/:linkPath" element={<FacilityAll />} />
+        <Route path="/Facility/indoor" element={<FacilityAll />} />
+        <Route path="/Facility/outdoor" element={<FacilityAll />} />
       </Routes>
     </Router>
   );

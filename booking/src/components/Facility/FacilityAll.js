@@ -13,7 +13,7 @@ function FacilityList({ type }) {
       {type.map((site) => (
         <div className="content_list">
           <h3 className={site.alignment}>{site.title}</h3>
-          <div className="content_list_txt">
+          <div className="content_list_txt padding-10">
             <p className={site.alignment}>{site.description}</p>
             <div className="content_img">
               <img src={site.image} alt={site.title} />

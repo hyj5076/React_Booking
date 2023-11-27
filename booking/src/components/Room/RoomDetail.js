@@ -90,7 +90,7 @@ function RoomDetail() {
       <section id="content">
         <div className="inner">
           <div className="content_main">
-            <div className="content_title center">
+            <div className="content_title center padding-10">
               <h3>{room.title}</h3>
               <p>{room.description}</p>
             </div>

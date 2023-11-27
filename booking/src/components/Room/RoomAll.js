@@ -11,7 +11,7 @@ function RoomTypeList({ rooms }) {
       {rooms.map((room) => (
         <div className="content_list">
           <h3 className={room.alignment}>{room.title}</h3>
-          <div className="content_list_txt">
+          <div className="content_list_txt padding-10">
             <p className={room.alignment}>{room.description}</p>
             <div className="content_img">
               <img src={room.image} alt={room.title} />
