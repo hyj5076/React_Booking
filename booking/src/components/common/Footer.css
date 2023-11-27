@@ -4,65 +4,62 @@
 */
 
 #footer {
-    border-top: #000 1px solid;
+  border-top: #000 1px solid;
 }
 
 .footer_h1 {
-    border-bottom: #d2d2d2 1px solid;
-    height: 50px;
-    display: flex;
+  border-bottom: #d2d2d2 1px solid;
+  height: 50px;
+  display: flex;
 }
 
 .footer_h1 p {
-    padding: 15px;
+  padding: 15px;
 }
 
 .footer_h1 img {
-    width: auto;
-    height: 50px;
-    margin: 0 20px;
+  width: auto;
+  height: 50px;
+  margin: 0 20px;
 }
-
 
 /* company */
 
 .company {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .company p {
-    padding: 5px 0;
+  padding: 5px 0;
 }
-
 
 /* gnb */
 
 .gnb {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .gnb > ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .gnb > ul > li {
-    padding: 5px 0;
+  padding: 5px 0;
 }
-
 
 /* copy */
 
 .copy {
-    padding: 10px 0;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 10px 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copy p {
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
 }

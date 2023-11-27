@@ -1,0 +1,144 @@
+{
+  "NavMenuData": [
+    {
+      "title": "객실",
+      "submenu": [
+        {
+          "title": "전체객실타입",
+          "linkPath": "RoomAll"
+        },
+        {
+          "title": "더블룸",
+          "linkPath": "double"
+        },
+        {
+          "title": "트윈룸",
+          "linkPath": "twin"
+        },
+        {
+          "title": "트리플룸",
+          "linkPath": "triple"
+        },
+        {
+          "title": "패밀리룸",
+          "linkPath": "family"
+        },
+        {
+          "title": "단체룸",
+          "linkPath": "group"
+        },
+        {
+          "title": "키즈룸",
+          "linkPath": "kids"
+        }
+      ],
+      "baseLink": "/Room"
+    },
+    {
+      "title": "단체",
+      "submenu": [
+        {
+          "title": "단체견적문의",
+          "linkPath": "Contact"
+        },
+        {
+          "title": "단체연수후기",
+          "linkPath": "Review"
+        }
+      ],
+      "baseLink": "/Group"
+    },
+    {
+      "title": "글램핑",
+      "submenu": [
+        {
+          "title": "글램핑",
+          "linkPath": "AboutUs"
+        },
+        {
+          "title": "바베큐장",
+          "linkPath": "AboutUs"
+        }
+      ],
+      "baseLink": "/Room"
+    },
+    {
+      "title": "실내시설",
+      "submenu": [
+        {
+          "title": "전체실내시설",
+          "linkPath": "indoor"
+        },
+        {
+          "title": "소강당/노래방",
+          "linkPath": "singing"
+        },
+        {
+          "title": "세미나실",
+          "linkPath": "seminar"
+        },
+        {
+          "title": "탁구장/당구장",
+          "linkPath": "tennis"
+        },
+        {
+          "title": "식당",
+          "linkPath": "restaurant"
+        }
+      ],
+      "baseLink": "/Facility"
+    },
+    {
+      "title": "야외시설",
+      "submenu": [
+        {
+          "title": "전체야외시설",
+          "linkPath": "outdoor"
+        },
+        {
+          "title": "글램핑/바베큐장",
+          "linkPath": "glamping"
+        },
+        {
+          "title": "소규모운동장",
+          "linkPath": "playground"
+        },
+        {
+          "title": "체육대회소품",
+          "linkPath": "sports"
+        },
+        {
+          "title": "루프팔각정",
+          "linkPath": "octagon"
+        }
+      ],
+      "baseLink": "/Facility"
+    },
+    {
+      "title": "이용안내",
+      "submenu": [
+        {
+          "title": "에잇포레 소개",
+          "linkPath": "AboutUs"
+        },
+        {
+          "title": "오시는길",
+          "linkPath": "Way"
+        },
+        {
+          "title": "배치도&갤러리",
+          "linkPath": "Gallery"
+        },
+        {
+          "title": "주변놀거리",
+          "linkPath": "Attraction"
+        },
+        {
+          "title": "이벤트",
+          "linkPath": "Event"
+        }
+      ],
+      "baseLink": "/Notice"
+    }
+  ]
+}

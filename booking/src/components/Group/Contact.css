@@ -1,0 +1,219 @@
+/* ---------------------------------------- 
+    단체 예약 신청서 : 타이틀 
+    
+    room_reserv2.3 예약결제
+    group_reserv1.1 단체예약
+   ---------------------------------------- */
+
+.content_group {
+  padding: 10px 0;
+}
+
+.content_txt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content_txt h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.content_txt a {
+  text-decoration: underline;
+  display: inline;
+}
+
+/* 고객문의 */
+
+.content_call {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.content_call p {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.content_call > div {
+  padding: 20px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.content_call .telicon {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  background-color: #eeeeee;
+  border-radius: 1000px;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_call i {
+  font-size: 2.4rem;
+}
+
+#question {
+  width: 100%;
+  border: #d2d2d2 1px solid;
+}
+
+/* ---------------------------------------- 
+    단체 예약 신청서 : 세부 양식 
+    
+    group_reserv1.1 단체예약
+   ---------------------------------------- */
+
+.reserv_form {
+  width: 100%;
+  border: #d2d2d2 1px solid;
+  padding: 10px 0 20px;
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+.reserv_form h4 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.reserv_list {
+  width: 100%;
+  padding: 10px;
+}
+
+.reserv_list .rl_1,
+.rl_2,
+.rl_4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reserv_list .rl_3 {
+  width: 100%;
+}
+
+.reserv_list .rl_3 input {
+  margin: 0 5px;
+}
+
+.reserv_list .rl_3 > li {
+  width: 100%;
+  border-bottom: #d2d2d2 1px solid;
+  padding: 15px 0;
+}
+
+/* 단체 예약 폼 세부양식 */
+
+.date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.date > form {
+  width: 100%;
+}
+
+.date > form > div {
+  display: flex;
+  width: 100%;
+}
+
+.date > form > div p {
+  padding: 10px 5px;
+}
+
+.date > div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.date > div p {
+  width: 80%;
+  padding: 8px 0;
+  background-color: #eeeeee;
+  border: #d2d2d2 1px solid;
+}
+
+.agree {
+  padding: 15px;
+}
+
+.agree li {
+  font-size: 1.2rem;
+  color: #333333;
+  padding: 5px 0;
+}
+
+.at {
+  padding: 20px 0 0;
+  font-size: 1.2rem;
+}
+
+/* rl_depth0 = payment */
+/* rl_depth1 = agree */
+
+.payment {
+  padding-top: 10px;
+}
+
+.payment > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.payment > ul > li {
+  width: calc((100% - 20px) / 3);
+}
+
+.payment > ul > li > a {
+  width: 100%;
+  padding: 12px 0;
+  border: #aaaaaa 1px solid;
+  text-align: center;
+}
+
+.payment select {
+  width: 100%;
+}
+
+.payment li.active a {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+}
+
+.payment_price {
+  margin-top: 10px;
+}
+
+.payment_price > ul {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  border: #d2d2d2 1px solid;
+}
+
+.bord2 {
+  border: #333 1px solid;
+}

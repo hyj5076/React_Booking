@@ -1,0 +1,44 @@
+/* ------------------------------------------------- 
+    [공통] 기본 콘텐츠 양식 content_basic
+
+    -이용안내 : 갤러리 notice_gallery
+    -이용안내 : 주변놀거리 notice_attraction
+   ------------------------------------------------- */
+
+.content_basic {
+  margin: 50px 0;
+}
+
+.content_basic h4 {
+  font-size: var(--large);
+  color: var(--black);
+}
+
+.content_basic .content_img {
+  position: relative;
+}
+
+.content_basic .content_img i {
+  cursor: pointer;
+}
+
+.content_basic .content_img img {
+  height: auto;
+  object-fit: cover;
+}
+
+.arrow_left {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.arrow_right {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.8);
+}

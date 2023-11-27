@@ -7,164 +7,173 @@
 /* 에잇포레 소개페이지 서브타이틀 */
 
 .content_title_sub {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .title_aboutus {
-    color: var(--aboutus);
+  color: var(--aboutus);
 }
 
 .title_aboutus h2 {
-    font-family: 'Stardos Stencil', cursive;
-    font-size: 5rem;
-    margin: 0 20px 0 120px;
+  font-family: "Stardos Stencil", cursive;
+  font-size: 5rem;
+  margin: 0 20px 0 120px;
 }
 
 .title_aboutus > div {
-    display: flex;
-    align-items:center;
+  display: flex;
+  align-items: center;
 }
 
-.title_aboutus .line  {
-    border-bottom: var(--aboutus) 1px solid;
-    width: 100%;
+.title_aboutus .line {
+  border-bottom: var(--aboutus) 1px solid;
+  width: 100%;
 }
 
 .title_aboutus h4 {
-    font-family: 'Stardos Stencil', cursive;
-    font-size: 3rem;
-    margin: 0 140px 0 20px;
+  font-family: "Stardos Stencil", cursive;
+  font-size: 3rem;
+  margin: 0 140px 0 20px;
 }
 
-    .keypoint {
-        position: relative;
-    }
+.keypoint {
+  position: relative;
+}
 
-    .keypoint p {
-        position: absolute;
-        top: 40px; left: 20px;
-    }
-
+.keypoint p {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
 
 /* [공통] 에잇포레 소개페이지 콘텐츠 */
 
 .content_aboutus {
-    margin: 50px 0;
-    position: relative;
+  margin: 50px 0;
+  position: relative;
 }
 
 .content_aboutus:last-child {
-    margin: 50px 0 0;
+  margin: 50px 0 0;
 }
 
 .content_aboutus h3 {
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 1em;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 1em;
 }
-
 
 /* [공통]에잇포레 소개페이지 콘텐츠 리스트 */
 
+/* 상단 */
 
+.top {
+  display: flex;
+  align-items: flex-end;
+}
 
-    /* 상단 */
+.top h2 {
+  font-family: "Stardos Stencil", cursive;
+  font-size: 5rem;
+}
 
-    .top {
-        display: flex;
-        align-items:flex-end;
-    }
+.top h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.8rem;
+  text-align: left;
+}
 
-    .top h2 {
-        font-family: 'Stardos Stencil', cursive;
-        font-size: 5rem;
-    }
+.top > div {
+  width: 100%;
+}
 
-    .top h3 {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 1.8rem;
-        text-align: left;
-    }
+.top_left {
+  padding-left: 10px;
+}
 
-    .top > div {
-        width: 100%;
-    }
+.top_right {
+  padding-right: 10px;
+  text-align: right;
+}
 
-        .top_left {
-            padding-left: 10px;
-        }
+.top .line {
+  border-bottom: #333 1px solid;
+}
 
-        .top_right {
-            padding-right: 10px;
-        }
+/* 하단 */
 
-    .top .line  {
-        border-bottom: #333 1px solid;
-    }
+.bottom {
+  position: relative;
+}
 
-    /* 하단 */
+.bottom_img {
+  width: 100%;
+  overflow: hidden;
+}
 
-    .bottom {
-        position: relative;
-    }
+.bottom_img img {
+  width: 100%;
+  height: auto;
+  background-position: center;
+}
 
-    .bottom_img {
-        width: 100%;
-    }
+.bottom_txt_left {
+  padding-top: 10px;
+  padding-right: 10px;
+}
 
-    .bottom_img img {
-        height: auto;
-    }
+.bottom_txt_right {
+  padding-top: 10px;
+  padding-left: 10px;
+}
 
-    .bottom_txt {
-        padding-top: 10px;
-    }
-    
-    .bottom_txt p span {
-        font-weight: 400;
-    }
+.bottom_txt p span {
+  font-weight: 400;
+}
 
-        .graybox {
-            position: absolute;
-            bottom: -30px; left: 0;
-            z-index: -1;
-            width: 100vw;
-            height: 200px;
-            background-color: #eeeeee;
-        }
+.graybox {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 200px;
+  background-color: #eeeeee;
+}
 
-        .english_right {
-            width: 300px;
-            text-align: right;
-            position: absolute;
-            top: 140px; right: -165px;
-            transform: rotate(-90deg);
-            color: #aaaaaa;
-            font-weight: 100;
-        }
+.english_right {
+  width: 300px;
+  text-align: right;
+  position: absolute;
+  top: 140px;
+  right: -165px;
+  transform: rotate(-90deg);
+  color: #aaaaaa;
+  font-weight: 100;
+}
 
-        .english_left {
-            width: 300px;
-            text-align: right;
-            position: absolute;
-            transform: rotate(-90deg);
-            top: 140px; left: -165px;
-            color: #aaaaaa;
-            font-weight: 100;
-        }
-
+.english_left {
+  width: 300px;
+  text-align: right;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 140px;
+  left: -165px;
+  color: #aaaaaa;
+  font-weight: 100;
+}
 
 /* [오른쪽]에잇포레 소개페이지 콘텐츠 리스트 */
 
 .aboutus_list_right {
-    padding-right: 50px;
+  padding-right: 50px;
 }
 
-.aboutus_list {
-    padding-left: 50px;
+.aboutus_list_left {
+  padding-left: 50px;
 }
 
 .top_right h3 {
-    text-align: right;
+  text-align: right;
 }

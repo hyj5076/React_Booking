@@ -1,0 +1,19 @@
+/* ------------------------------------------------- 
+    이용안내 : 에잇포레 오시는길 
+    
+    notice_way
+   ------------------------------------------------- */
+
+.box_address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_address p a {
+  display: inline;
+  margin-left: 10px;
+}
+
+.box_address p i {
+  font-size: 2rem;
+}
