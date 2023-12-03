@@ -12,7 +12,7 @@ function Footer() {
       <div className="inner">
         <div className="company">
           <p>경주시 양남면 산에들레길 301-18</p>
-          <p>대표이사 강동원</p>
+          <p>대표이사 차은우</p>
           <p>T.1234 - 1234</p>
           <p>사업자등록번호 123-45-678910</p>
           <p>통신판매신고번호 0구 1234호</p>
