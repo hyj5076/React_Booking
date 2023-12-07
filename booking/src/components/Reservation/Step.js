@@ -1,3 +1,4 @@
+import "./Reservation.css";
 import "../App.css";
 
 function Step() {
