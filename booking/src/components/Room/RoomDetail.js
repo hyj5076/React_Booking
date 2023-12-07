@@ -26,34 +26,36 @@ function RoomSpec({ spec = [] }) {
 
 function RoomAmenity({ amenity = [] }) {
   return (
-    <div className="content_box amenity">
-      <h4>객실 어메니티</h4>
-      <div className="box">
-        {amenity.map((box, index) => {
-          const allIndex = Math.ceil(box.amenity.length / 2);
-          const leftItems = box.amenity.slice(0, allIndex);
-          const rightItems = box.amenity.slice(allIndex);
+    <>
+      <div className="content_box amenity">
+        <h4>객실 어메니티</h4>
+        <div className="box">
+          {amenity.map((box, index) => {
+            const allIndex = Math.ceil(box.amenity.length / 2);
+            const leftItems = box.amenity.slice(0, allIndex);
+            const rightItems = box.amenity.slice(allIndex);
 
-          return (
-            <div key={index}>
-              <h3 className="title_amenity">{box.title}</h3>
-              <div className="spacebetween">
-                <div className="left">
-                  {leftItems.map((item, itemIndex) => (
-                    <p key={itemIndex}>{item.item}</p>
-                  ))}
-                </div>
-                <div className="right">
-                  {rightItems.map((item, itemIndex) => (
-                    <p key={itemIndex}>{item.item}</p>
-                  ))}
+            return (
+              <div key={index}>
+                <h3 className="title_amenity">{box.title}</h3>
+                <div className="spacebetween">
+                  <div className="left">
+                    {leftItems.map((item, itemIndex) => (
+                      <p key={itemIndex}>{item.item}</p>
+                    ))}
+                  </div>
+                  <div className="right">
+                    {rightItems.map((item, itemIndex) => (
+                      <p key={itemIndex}>{item.item}</p>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

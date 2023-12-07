@@ -20,35 +20,37 @@ import Reservation from "./Reservation/Reservation";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header />
-              <Main />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/common/Nav" element={<Nav />} />
-        <Route path="/Room/RoomAll" element={<RoomAll />} />
-        <Route path="/Room/:linkPath" element={<RoomDetail />} />
-        <Route path="/Notice/AboutUs" element={<AboutUs />} />
-        <Route path="/Notice/Attraction" element={<Attraction />} />
-        <Route path="/Notice/Event" element={<Event />} />
-        <Route path="/Notice/Way" element={<Way />} />
-        <Route path="/Notice/Gallery" element={<Gallery />} />
-        <Route path="/Group/Contact" element={<GroupContact />} />
-        <Route path="/Log/Member" element={<Member />} />
-        <Route path="/Log/NonMember" element={<NonMember />} />
-        <Route path="/Facility/indoor" element={<FacilityAll />} />
-        <Route path="/Facility/outdoor" element={<FacilityAll />} />
-        <Route path="/Facility/:linkPath" element={<Facility />} />
-        <Route path="/Reservation/Reservation" element={<Reservation />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Main />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/common/Nav" element={<Nav />} />
+          <Route path="/Room/RoomAll" element={<RoomAll />} />
+          <Route path="/Room/:linkPath" element={<RoomDetail />} />
+          <Route path="/Notice/AboutUs" element={<AboutUs />} />
+          <Route path="/Notice/Attraction" element={<Attraction />} />
+          <Route path="/Notice/Event" element={<Event />} />
+          <Route path="/Notice/Way" element={<Way />} />
+          <Route path="/Notice/Gallery" element={<Gallery />} />
+          <Route path="/Group/Contact" element={<GroupContact />} />
+          <Route path="/Log/Member" element={<Member />} />
+          <Route path="/Log/NonMember" element={<NonMember />} />
+          <Route path="/Facility/indoor" element={<FacilityAll />} />
+          <Route path="/Facility/outdoor" element={<FacilityAll />} />
+          <Route path="/Facility/:linkPath" element={<Facility />} />
+          <Route path="/Reservation/Reservation" element={<Reservation />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

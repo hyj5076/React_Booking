@@ -25,16 +25,18 @@ function MainTitle({ index }) {
   const title = MainTitleData[index];
 
   return (
-    <div className="main_headline">
-      <div className="inner">
-        <h2>{title.headline}</h2>
-        <div className="m_line inner"></div>
-        <div className="main_txt">
-          <p>{title.content}</p>
-          <Link to="/Notice/AboutUs">더보기</Link>
+    <>
+      <div className="main_headline">
+        <div className="inner">
+          <h2>{title.headline}</h2>
+          <div className="m_line inner"></div>
+          <div className="main_txt">
+            <p>{title.content}</p>
+            <Link to="/Notice/AboutUs">더보기</Link>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -89,41 +91,43 @@ function Main() {
   };
 
   return (
-    <div id="main">
-      <section id="main_visual">
-        <div className="main_img">
-          <img src="images/main.jpg" alt="메인이미지" />
-        </div>
+    <>
+      <div id="main">
+        <section id="main_visual">
+          <div className="main_img">
+            <img src="images/main.jpg" alt="메인이미지" />
+          </div>
 
-        <div className="main_part">
-          <ul className="max_inner">
-            {categories.map((category) => (
-              <li
-                key={category.id}
-                className={selectedCategory === category.id ? "active" : ""}
-              >
-                <button onClick={() => handleButtonClick(category.id)}>
-                  {category.label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
+          <div className="main_part">
+            <ul className="max_inner">
+              {categories.map((category) => (
+                <li
+                  key={category.id}
+                  className={selectedCategory === category.id ? "active" : ""}
+                >
+                  <button onClick={() => handleButtonClick(category.id)}>
+                    {category.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <div className="booking">
-          <div className="inner">
-            <div className="btn">
-              <Link to="/Reservation/Reservation">예약하기</Link>
+          <div className="booking">
+            <div className="inner">
+              <div className="btn">
+                <Link to="/Reservation/Reservation">예약하기</Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="main_content">
-        <MainTitle index={categoryMap[selectedCategory]} />
-        <MainContentsList contents={contentData[selectedCategory]} />
-      </section>
-    </div>
+        <section id="main_content">
+          <MainTitle index={categoryMap[selectedCategory]} />
+          <MainContentsList contents={contentData[selectedCategory]} />
+        </section>
+      </div>
+    </>
   );
 }
 
