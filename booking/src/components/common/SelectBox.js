@@ -8,7 +8,7 @@ function SelectBox() {
         <h3>RoomType</h3>
 
         <select class="select_box">
-          <option selected>전체객실타입</option>
+          <option>전체객실타입</option>
           <option>더블룸</option>
           <option>트윈룸</option>
           <option>트리플룸</option>
