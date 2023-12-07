@@ -75,7 +75,7 @@ function Booking() {
   );
 }
 
-function Step() {
+function Schedule() {
   return (
     <section id="content">
       <div class="content_reserv back_gray">
@@ -91,4 +91,4 @@ function Step() {
   );
 }
 
-export default Step;
+export default Schedule;

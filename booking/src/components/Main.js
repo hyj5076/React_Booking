@@ -3,7 +3,6 @@ import "./Main.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import contentData from "./data/MainContentsList.json";
-import Reservation from "./Reservation/Reservation";
 
 function MainTitle({ index }) {
   const MainTitleData = [
