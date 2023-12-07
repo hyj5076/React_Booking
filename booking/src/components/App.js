@@ -16,6 +16,7 @@ import Member from "./Log/Member";
 import NonMember from "./Log/NonMember";
 import Facility from "./Facility/Facility";
 import FacilityAll from "./Facility/FacilityAll";
+import Reservation from "./Reservation/Reservation";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/Facility/indoor" element={<FacilityAll />} />
         <Route path="/Facility/outdoor" element={<FacilityAll />} />
         <Route path="/Facility/:linkPath" element={<Facility />} />
+        <Route path="/Reservation/Reservation" element={<Reservation />} />
       </Routes>
     </Router>
   );

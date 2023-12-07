@@ -3,6 +3,7 @@ import "./Main.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import contentData from "./data/MainContentsList.json";
+import Reservation from "./Reservation/Reservation";
 
 function MainTitle({ index }) {
   const MainTitleData = [
@@ -113,7 +114,7 @@ function Main() {
         <div className="booking">
           <div className="inner">
             <div className="btn">
-              <Link>예약하기</Link>
+              <Link to="/Reservation/Reservation">예약하기</Link>
             </div>
           </div>
         </div>
