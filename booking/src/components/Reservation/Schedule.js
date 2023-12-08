@@ -106,7 +106,7 @@ function Booking() {
     setStartDate(formattedToday);
   }, []);
 
-  // 시작 날짜 또는 박 수가 변경될 때, 종료 날짜를 설정합니다.
+  // 시작 날짜 또는 박 수가 변경될 때, 종료 날짜를 설정
   useEffect(() => {
     if (startDate) {
       const start = new Date(startDate);
@@ -117,7 +117,7 @@ function Booking() {
     }
   }, [startDate, nights]);
 
-  // 종료 날짜가 변경될 때, 박 수를 업데이트합니다.
+  // 종료 날짜가 변경될 때, 박 수를 업데이트 함
   useEffect(() => {
     if (startDate && endDate) {
       const start = new Date(startDate);
@@ -128,7 +128,7 @@ function Booking() {
         setNights(diffDays);
       }
     }
-  }, [endDate]);
+  }, [endDate]); // 의존성 배열 의도적인 무시
 
   const handleCountChange = (action) => {
     if (action === "plus") {
