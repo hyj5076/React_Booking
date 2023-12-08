@@ -48,11 +48,13 @@ function DateInput({
 }) {
   const handleEndDateChange = (e) => {
     const newEndDate = e.target.value;
-    if (new Date(newEndDate) >= new Date(startDate)) {
+    if (new Date(newEndDate) > new Date(startDate)) {
       setEndDate(newEndDate);
     } else {
-      alert("종료 날짜는 시작 날짜 이후여야 합니다.");
-      setEndDate(previousEndDate);
+      alert("최소 숙박일수는 1일입니다.");
+      const nextDay = new Date(startDate);
+      nextDay.setDate(nextDay.getDate() + 1);
+      setEndDate(nextDay.toISOString().split("T")[0]);
     }
   };
 
