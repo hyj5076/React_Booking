@@ -39,13 +39,7 @@ function BookingBox() {
   );
 }
 
-function DateInput({
-  startDate,
-  endDate,
-  setStartDate,
-  setEndDate,
-  previousEndDate,
-}) {
+function DateInput({ startDate, endDate, setStartDate, setEndDate }) {
   const handleEndDateChange = (e) => {
     const newEndDate = e.target.value;
     if (new Date(newEndDate) > new Date(startDate)) {
@@ -104,20 +98,15 @@ function Booking() {
   const [nights, setNights] = useState(1);
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
-  const [previousEndDate, setPreviousEndDate] = useState("");
 
-  useEffect(() => {
-    if (endDate) {
-      setPreviousEndDate(endDate);
-    }
-  }, [endDate]);
-
+  // 컴포넌트 마운트 시, 오늘 날짜를 시작 날짜로 설정
   useEffect(() => {
     const today = new Date();
     const formattedToday = today.toISOString().split("T")[0];
     setStartDate(formattedToday);
   }, []);
 
+  // 시작 날짜 또는 박 수가 변경될 때, 종료 날짜를 설정합니다.
   useEffect(() => {
     if (startDate) {
       const start = new Date(startDate);
@@ -127,6 +116,19 @@ function Booking() {
       setEndDate(formattedEndDate);
     }
   }, [startDate, nights]);
+
+  // 종료 날짜가 변경될 때, 박 수를 업데이트합니다.
+  useEffect(() => {
+    if (startDate && endDate) {
+      const start = new Date(startDate);
+      const end = new Date(endDate);
+      const diffTime = end - start;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      if (diffDays >= 0) {
+        setNights(diffDays);
+      }
+    }
+  }, [endDate]);
 
   const handleCountChange = (action) => {
     if (action === "plus") {
@@ -144,7 +146,6 @@ function Booking() {
           endDate={endDate}
           setStartDate={setStartDate}
           setEndDate={setEndDate}
-          previousEndDate={previousEndDate}
         />
         <Night nights={nights} handleCountChange={handleCountChange} />
       </div>
