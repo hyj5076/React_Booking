@@ -2,6 +2,7 @@ import "./Reservation.css";
 import "../App.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import CustomDatePicker from "./DatePicker";
 
 function Button() {
   return (
@@ -38,23 +39,34 @@ function BookingBox() {
   );
 }
 
-function DateInput({ startDate, endDate, setStartDate, setEndDate }) {
+function DateInput({
+  startDate,
+  endDate,
+  setStartDate,
+  setEndDate,
+  previousEndDate,
+}) {
+  const handleEndDateChange = (e) => {
+    const newEndDate = e.target.value;
+    if (new Date(newEndDate) >= new Date(startDate)) {
+      setEndDate(newEndDate);
+    } else {
+      alert("종료 날짜는 시작 날짜 이후여야 합니다.");
+      setEndDate(previousEndDate);
+    }
+  };
+
   return (
     <ul>
       <li>
-        <input
-          type="date"
+        <CustomDatePicker
           value={startDate}
           onChange={(e) => setStartDate(e.target.value)}
         />
       </li>
       <li>-</li>
       <li>
-        <input
-          type="date"
-          value={endDate}
-          onChange={(e) => setEndDate(e.target.value)}
-        />
+        <CustomDatePicker value={endDate} onChange={handleEndDateChange} />
       </li>
     </ul>
   );
@@ -90,6 +102,13 @@ function Booking() {
   const [nights, setNights] = useState(1);
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
+  const [previousEndDate, setPreviousEndDate] = useState("");
+
+  useEffect(() => {
+    if (endDate) {
+      setPreviousEndDate(endDate);
+    }
+  }, [endDate]);
 
   useEffect(() => {
     const today = new Date();
@@ -123,6 +142,7 @@ function Booking() {
           endDate={endDate}
           setStartDate={setStartDate}
           setEndDate={setEndDate}
+          previousEndDate={previousEndDate}
         />
         <Night nights={nights} handleCountChange={handleCountChange} />
       </div>
