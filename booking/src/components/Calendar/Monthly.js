@@ -1,4 +1,5 @@
 import "../App.css";
+import "./Calendar.css";
 import Available from "./Available";
 import CalendarTitle from "./Title";
 

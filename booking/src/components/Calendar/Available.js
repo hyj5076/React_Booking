@@ -1,4 +1,5 @@
 import "../App.css";
+import "./Calendar.css";
 
 function Available() {
   return (
