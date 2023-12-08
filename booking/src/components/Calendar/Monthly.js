@@ -5,14 +5,14 @@ import CalendarTitle from "./Title";
 function Monthly() {
   return (
     <>
-      <div class="calendar">
-        <div class="inner">
+      <div className="calendar">
+        <div className="inner">
           <CalendarTitle />
 
-          <div class="calendar_table">
+          <div className="calendar_table">
             <Available />
 
-            <div class="cal_table_month">
+            <div className="cal_table_month">
               <p>달력 끌어오기!!!</p>
             </div>
           </div>

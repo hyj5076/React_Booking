@@ -7,7 +7,7 @@ import SelectBox from "../common/SelectBox";
 function AttractionTitle() {
   return (
     <>
-      <div class="content_title center">
+      <div className="content_title center">
         <h3>Attraction</h3>
         <p>
           에잇포레 근처 가볼만한 곳에 대한 예시 설명입니다.
@@ -23,15 +23,15 @@ function AttractionTitle() {
 function AttractionContents() {
   return (
     <>
-      <div class="content_basic">
+      <div className="content_basic">
         <h4>관성솔밭비치</h4>
-        <div class="content_img">
+        <div className="content_img">
           <img src="/images/sub/attrac0.jpg" alt="볼거리" />
-          <div class="arrow_left">
-            <i class="bi bi-arrow-left-circle-fill"></i>
+          <div className="arrow_left">
+            <i className="bi bi-arrow-left-circle-fill"></i>
           </div>
-          <div class="arrow_right">
-            <i class="bi bi-arrow-right-circle-fill"></i>
+          <div className="arrow_right">
+            <i className="bi bi-arrow-right-circle-fill"></i>
           </div>
         </div>
         <p>(간단한 설명: 위치와 거리 등)</p>
@@ -46,8 +46,8 @@ function Attraction() {
       <Header />
       <SelectBox />
       <section id="content_sub">
-        <div class="inner">
-          <div class="content_main">
+        <div className="inner">
+          <div className="content_main">
             <AttractionTitle />
             <AttractionContents />
           </div>

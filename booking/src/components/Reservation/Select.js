@@ -6,12 +6,12 @@ function Select() {
   return (
     <>
       <section id="title_reserv">
-        <div class="nav_reserv inner">
+        <div className="nav_reserv inner">
           <ul>
             <li>
               <Link>Gramping</Link>
             </li>
-            <li class="active">
+            <li className="active">
               <Link>Room</Link>
             </li>
             <li>

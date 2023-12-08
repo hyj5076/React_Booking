@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function WayTitle() {
   return (
     <>
-      <div class="content_title center">
+      <div className="content_title center">
         <h3>The Way to Come</h3>
       </div>
     </>
@@ -18,7 +18,7 @@ function WayTitle() {
 function WayMap() {
   return (
     <>
-      <div class="content_img">
+      <div className="content_img">
         <img src="/images/sub/notice_map.PNG" alt="지도" />
       </div>
     </>
@@ -28,18 +28,18 @@ function WayMap() {
 function WayAddress() {
   return (
     <>
-      <div class="content_box">
+      <div className="content_box">
         <h4>상세주소</h4>
-        <div class="box">
-          <div class="box_address">
+        <div className="box">
+          <div className="box_address">
             <p>
               경주시 양남면 산에들레길 301-18
               <Link>
-                <i class="bi bi-link-45deg"></i>
+                <i className="bi bi-link-45deg"></i>
               </Link>
             </p>
             <Link>
-              <i class="bi bi-geo-alt-fill"></i>
+              <i className="bi bi-geo-alt-fill"></i>
             </Link>
           </div>
         </div>
@@ -54,8 +54,8 @@ function Way() {
       <Header />
       <SelectBox />
       <section id="content">
-        <div class="inner">
-          <div class="content_main">
+        <div className="inner">
+          <div className="content_main">
             <WayTitle />
             <WayMap />
             <WayAddress />

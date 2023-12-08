@@ -8,7 +8,7 @@ import AboutUsData from "../data/AboutUsList.json";
 function AboutUsTitle() {
   return (
     <>
-      <div class="content_title center max_inner">
+      <div className="content_title center max_inner">
         <h3>About us</h3>
         <p>
           '에잇포레(Eight Fore)'는
@@ -25,14 +25,14 @@ function AboutUsTitle() {
 function AboutUsHeadline() {
   return (
     <>
-      <div class="title_aboutus max_inner">
+      <div className="title_aboutus max_inner">
         <div>
           <h2>08</h2>
-          <div class="line"></div>
+          <div className="line"></div>
         </div>
         <div>
-          <div class="line"></div>
-          <div class="keypoint">
+          <div className="line"></div>
+          <div className="keypoint">
             <h4>KEYPOINT</h4>
             <p>에잇포레의 여덟가지 인프라를 만나보세요.</p>
           </div>
@@ -54,34 +54,34 @@ function AboutUsContents({
 }) {
   return (
     <>
-      <div class="content_aboutus">
-        <div className={`aboutus_list_${layout} max_inner`}>
-          <div class="top">
+      <div className="content_aboutus">
+        <div classNameName={`aboutus_list_${layout} max_inner`}>
+          <div className="top">
             {layout === "left" && (
               <>
                 <h2>{number}</h2>
-                <div class={`top_${layout}`}>
-                  <div class="line"></div>
+                <div className={`top_${layout}`}>
+                  <div className="line"></div>
                   <h3>{title}</h3>
                 </div>
               </>
             )}
             {layout === "right" && (
               <>
-                <div class={`top_${layout}`}>
-                  <div class="line"></div>
+                <div className={`top_${layout}`}>
+                  <div className="line"></div>
                   <h3>{title}</h3>
                 </div>
                 <h2>{number}</h2>
               </>
             )}
           </div>
-          <div class="bottom">
-            <div class="bottom_img">
+          <div className="bottom">
+            <div className="bottom_img">
               <img src={imageSrc} alt={imageAlt} />
-              <p class={`english_${layout}`}>{englishTitle}</p>
+              <p className={`english_${layout}`}>{englishTitle}</p>
             </div>
-            <div class={`bottom_txt_${layout}`}>
+            <div className={`bottom_txt_${layout}`}>
               <p>
                 <b>{subTitle}</b>
               </p>
@@ -89,7 +89,7 @@ function AboutUsContents({
             </div>
           </div>
         </div>
-        <div class="graybox"></div>
+        <div className="graybox"></div>
       </div>
     </>
   );
@@ -101,8 +101,8 @@ function AboutUs() {
       <Header />
       <SelectBox />
       <section id="content">
-        <div class="content_main">
-          <div class="content_title_sub">
+        <div className="content_main">
+          <div className="content_title_sub">
             <AboutUsTitle />
             <AboutUsHeadline />
           </div>

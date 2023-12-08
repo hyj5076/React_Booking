@@ -1,5 +1,3 @@
-import React from "react";
-
 function CustomDatePicker({ value, onChange }) {
   const today = new Date().toISOString().split("T")[0];
 

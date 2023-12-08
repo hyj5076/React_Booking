@@ -6,30 +6,30 @@ function NonMember() {
   return (
     <>
       <section id="loginpage">
-        <div class="login">
-          <div class="login_title">
+        <div className="login">
+          <div className="login_title">
             <h2>LogIn</h2>
           </div>
-          <div class="login_main">
-            <div class="inner">
-              <div class="login_name">
+          <div className="login_main">
+            <div className="inner">
+              <div className="login_name">
                 <h2>Eight Fore</h2>
-                <p class="rg">resort & glamping</p>
+                <p className="rg">resort & glamping</p>
               </div>
-              <div class="login_btn">
+              <div className="login_btn">
                 <ul>
                   <li>
-                    <form class="rl_2">
+                    <form className="rl_2">
                       <input type="text" placeholder="성함(이름)" />
                     </form>
                   </li>
                   <li>
-                    <form class="rl_2">
+                    <form className="rl_2">
                       <input type="text" placeholder="연락처(전화번호)" />
                     </form>
                   </li>
                   <li>
-                    <Link href="#">비회원 로그인</Link>
+                    <Link>비회원 로그인</Link>
                   </li>
                 </ul>
               </div>

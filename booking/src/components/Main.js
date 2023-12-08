@@ -58,9 +58,7 @@ function MainContentsList({ contents }) {
               </div>
               <div className="more">
                 <p>
-                  <Link href="sub/notice_attraction.html">
-                    {txt.alt} 자세히보기
-                  </Link>
+                  <Link>{txt.alt} 자세히보기</Link>
                 </p>
               </div>
             </div>

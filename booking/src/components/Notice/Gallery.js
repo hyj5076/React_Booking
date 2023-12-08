@@ -7,7 +7,7 @@ import SelectBox from "../common/SelectBox";
 function GalleryTitle() {
   return (
     <>
-      <div class="content_title center">
+      <div className="content_title center">
         <h3>Map&Gallery</h3>
         <p>
           에잇포레 이용안내에 대한 예시 설명입니다.
@@ -23,9 +23,9 @@ function GalleryTitle() {
 function GalleryLoadMap() {
   return (
     <>
-      <div class="content_basic">
+      <div className="content_basic">
         <h4>전체 안내도</h4>
-        <div class="content_img">
+        <div className="content_img">
           <img src="/images/sub/loadmap.JPG" alt="배치도" />
         </div>
       </div>
@@ -36,15 +36,15 @@ function GalleryLoadMap() {
 function GalleryPictures() {
   return (
     <>
-      <div class="content_basic">
+      <div className="content_basic">
         <h4>갤러리</h4>
-        <div class="content_img">
+        <div className="content_img">
           <img src="/images/sub/gallery.jpg" alt="갤러리" />
-          <div class="arrow_left">
-            <i class="bi bi-arrow-left-circle-fill"></i>
+          <div className="arrow_left">
+            <i className="bi bi-arrow-left-circle-fill"></i>
           </div>
-          <div class="arrow_right">
-            <i class="bi bi-arrow-right-circle-fill"></i>
+          <div className="arrow_right">
+            <i className="bi bi-arrow-right-circle-fill"></i>
           </div>
         </div>
       </div>
@@ -58,8 +58,8 @@ function Gallery() {
       <Header />
       <SelectBox />
       <section id="content">
-        <div class="inner">
-          <div class="content_main">
+        <div className="inner">
+          <div className="content_main">
             <GalleryTitle />
             <GalleryLoadMap />
             <GalleryPictures />

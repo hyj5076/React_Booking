@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 function Button() {
   return (
     <>
-      <div class="btn_short">
-        <div class="btn0">
+      <div className="btn_short">
+        <div className="btn0">
           <Link>예약하기</Link>
         </div>
       </div>
@@ -18,7 +18,7 @@ function Button() {
 function BookingBox() {
   return (
     <>
-      <div class="booking_box">
+      <div className="booking_box">
         <div>
           <div>
             <p>Room</p>
@@ -67,14 +67,14 @@ function Night({ nights, handleCountChange }) {
         <div>
           <p>
             <input
-              class="count_btn"
+              className="count_btn"
               type="button"
               onClick={() => handleCountChange("minus")}
               value="-"
             />
             <span>{nights}</span>박
             <input
-              class="count_btn"
+              className="count_btn"
               type="button"
               onClick={() => handleCountChange("plus")}
               value="+"
@@ -117,7 +117,7 @@ function Booking() {
 
   return (
     <>
-      <div class="booking_box">
+      <div className="booking_box">
         <DateInput
           startDate={startDate}
           endDate={endDate}
@@ -133,9 +133,9 @@ function Booking() {
 function Schedule() {
   return (
     <section id="content">
-      <div class="content_reserv back_gray">
-        <div class="booking">
-          <div class="inner">
+      <div className="content_reserv back_gray">
+        <div className="booking">
+          <div className="inner">
             <Booking />
             <BookingBox />
             <Button />

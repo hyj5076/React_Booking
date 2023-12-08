@@ -7,7 +7,7 @@ import SelectBox from "../common/SelectBox";
 function EventTitle() {
   return (
     <>
-      <div class="content_title center">
+      <div className="content_title center">
         <h3>Special Event</h3>
         <p>
           에잇포레의 이벤트에 대한 예시 설명입니다.
@@ -23,28 +23,28 @@ function EventTitle() {
 function EventContents() {
   return (
     <>
-      <div class="content_basic">
-        <div class="card">
+      <div className="content_basic">
+        <div className="card">
           <h4>EIGHTFORE 생일 축하 이벤트</h4>
 
-          <div class="card_img swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+          <div className="card_img swiper mySwiper">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
                 <img src="/images/sub/event0.jpg" alt="01" />
               </div>
-              <div class="swiper-slide">
+              <div className="swiper-slide">
                 <img src="/images/sub/event1.jpg" alt="02" />
               </div>
-              <div class="swiper-slide">
+              <div className="swiper-slide">
                 <img src="/images/sub/attrac0.jpg" alt="03" />
               </div>
-              <div class="swiper-slide">
+              <div className="swiper-slide">
                 <img src="/images/sub/gallery.jpg" alt="04" />
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div className="swiper-pagination"></div>
           </div>
-          <p class="card_date">2023.01.01-2023.12.31</p>
+          <p className="card_date">2023.01.01-2023.12.31</p>
           <p>생일을 맞은 13세 이하 어린이에게 랜덤 기프트 세트를 드립니다.</p>
         </div>
       </div>
@@ -58,8 +58,8 @@ function Event() {
       <Header />
       <SelectBox />
       <section id="content_sub">
-        <div class="inner">
-          <div class="content_main">
+        <div className="inner">
+          <div className="content_main">
             <EventTitle />
             <EventContents />
           </div>
