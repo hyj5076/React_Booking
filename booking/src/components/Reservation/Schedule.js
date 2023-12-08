@@ -17,6 +17,9 @@ function Button() {
 }
 
 function BookingBox() {
+  const [adultCount, setAdultCount] = useState(2);
+  const [kidCount, setKidCount] = useState(0);
+
   return (
     <>
       <div className="booking_box">
@@ -27,11 +30,29 @@ function BookingBox() {
           </div>
           <div>
             <p>Adult</p>
-            <p>2</p>
+            <select
+              value={adultCount}
+              onChange={(e) => setAdultCount(e.target.value)}
+            >
+              {[...Array(10).keys()].map((n) => (
+                <option key={n + 1} value={n + 1}>
+                  {n + 1}
+                </option>
+              ))}
+            </select>
           </div>
           <div>
             <p>Kid</p>
-            <p>0</p>
+            <select
+              value={kidCount}
+              onChange={(e) => setKidCount(e.target.value)}
+            >
+              {[...Array(10).keys()].map((n) => (
+                <option key={n} value={n}>
+                  {n}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>
