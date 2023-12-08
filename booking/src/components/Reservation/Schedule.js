@@ -1,7 +1,7 @@
 import "./Reservation.css";
 import "../App.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Button() {
   return (
@@ -39,7 +39,14 @@ function BookingBox() {
 }
 
 function Booking() {
-  const [nights, setNights] = useState(1); // "박" 수를 관리하는 state
+  const [nights, setNights] = useState(1); // 숙박일수 관리
+  const [startDate, setStartDate] = useState(""); // 시작 날짜
+
+  useEffect(() => {
+    const today = new Date();
+    const formattedDate = today.toISOString().split("T")[0];
+    setStartDate(formattedDate);
+  }, []);
 
   const handleCountChange = (action) => {
     if (action === "plus") {
@@ -54,7 +61,11 @@ function Booking() {
       <div class="booking_box">
         <ul>
           <li>
-            <input type="date" />
+            <input
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+            />
           </li>
           <li>-</li>
           <li>
