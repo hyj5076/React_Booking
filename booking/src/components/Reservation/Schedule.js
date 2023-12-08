@@ -1,12 +1,14 @@
 import "./Reservation.css";
 import "../App.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Button() {
   return (
     <>
       <div class="btn_short">
         <div class="btn0">
-          <a href="/booking/sub/room_1reserv_2.2.html">예약하기</a>
+          <Link>예약하기</Link>
         </div>
       </div>
     </>
@@ -37,6 +39,16 @@ function BookingBox() {
 }
 
 function Booking() {
+  const [nights, setNights] = useState(1); // "박" 수를 관리하는 state
+
+  const handleCountChange = (action) => {
+    if (action === "plus") {
+      setNights(nights + 1);
+    } else if (action === "minus" && nights > 1) {
+      setNights(nights - 1);
+    }
+  };
+
   return (
     <>
       <div class="booking_box">
@@ -56,14 +68,14 @@ function Booking() {
                 <input
                   class="count_btn"
                   type="button"
-                  onclick="count('minus')"
+                  onClick={() => handleCountChange("minus")}
                   value="-"
                 />
-                <span>1</span>박
+                <span>{nights}</span>박
                 <input
                   class="count_btn"
                   type="button"
-                  onclick="count('plus')"
+                  onClick={() => handleCountChange("plus")}
                   value="+"
                 />
               </p>
