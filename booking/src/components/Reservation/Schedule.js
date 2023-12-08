@@ -38,6 +38,54 @@ function BookingBox() {
   );
 }
 
+function DateInput({ startDate, endDate, setStartDate, setEndDate }) {
+  return (
+    <ul>
+      <li>
+        <input
+          type="date"
+          value={startDate}
+          onChange={(e) => setStartDate(e.target.value)}
+        />
+      </li>
+      <li>-</li>
+      <li>
+        <input
+          type="date"
+          value={endDate}
+          onChange={(e) => setEndDate(e.target.value)}
+        />
+      </li>
+    </ul>
+  );
+}
+
+function Night({ nights, handleCountChange }) {
+  return (
+    <ul>
+      <li>
+        <div>
+          <p>
+            <input
+              class="count_btn"
+              type="button"
+              onClick={() => handleCountChange("minus")}
+              value="-"
+            />
+            <span>{nights}</span>박
+            <input
+              class="count_btn"
+              type="button"
+              onClick={() => handleCountChange("plus")}
+              value="+"
+            />
+          </p>
+        </div>
+      </li>
+    </ul>
+  );
+}
+
 function Booking() {
   const [nights, setNights] = useState(1);
   const [startDate, setStartDate] = useState("");
@@ -53,7 +101,7 @@ function Booking() {
     if (startDate) {
       const start = new Date(startDate);
       const end = new Date(start);
-      end.setDate(start.getDate() + nights); // 숙박일수 만큼 날짜 추가
+      end.setDate(start.getDate() + nights);
       const formattedEndDate = end.toISOString().split("T")[0];
       setEndDate(formattedEndDate);
     }
@@ -70,44 +118,13 @@ function Booking() {
   return (
     <>
       <div class="booking_box">
-        <ul>
-          <li>
-            <input
-              type="date"
-              value={startDate}
-              onChange={(e) => setStartDate(e.target.value)}
-            />
-          </li>
-          <li>-</li>
-          <li>
-            <input
-              type="date"
-              value={endDate}
-              onChange={(e) => setEndDate(e.target.value)}
-            />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div>
-              <p>
-                <input
-                  class="count_btn"
-                  type="button"
-                  onClick={() => handleCountChange("minus")}
-                  value="-"
-                />
-                <span>{nights}</span>박
-                <input
-                  class="count_btn"
-                  type="button"
-                  onClick={() => handleCountChange("plus")}
-                  value="+"
-                />
-              </p>
-            </div>
-          </li>
-        </ul>
+        <DateInput
+          startDate={startDate}
+          endDate={endDate}
+          setStartDate={setStartDate}
+          setEndDate={setEndDate}
+        />
+        <Night nights={nights} handleCountChange={handleCountChange} />
       </div>
     </>
   );
