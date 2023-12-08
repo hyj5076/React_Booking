@@ -1103,3 +1103,9 @@ table p {
 .bord2 {
   border: #333 1px solid;
 }
+
+.light-border {
+  border: 1px solid #e0e0e0;
+  padding: 2px; /* 패딩 */
+  border-radius: 5px;
+}

@@ -31,6 +31,7 @@ function BookingBox() {
           <div>
             <p>Adult</p>
             <select
+              className="light-border"
               value={adultCount}
               onChange={(e) => setAdultCount(e.target.value)}
             >
@@ -44,10 +45,11 @@ function BookingBox() {
           <div>
             <p>Kid</p>
             <select
+              className="light-border"
               value={kidCount}
               onChange={(e) => setKidCount(e.target.value)}
             >
-              {[...Array(10).keys()].map((n) => (
+              {[...Array(11).keys()].map((n) => (
                 <option key={n} value={n}>
                   {n}
                 </option>
