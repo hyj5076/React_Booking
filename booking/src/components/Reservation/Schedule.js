@@ -128,7 +128,7 @@ function Booking() {
         setNights(diffDays);
       }
     }
-  }, [endDate]); // 의존성 배열 의도적인 무시
+  }, [endDate]); // 의존성 배열 의도적인 무시 : 충돌 방지
 
   const handleCountChange = (action) => {
     if (action === "plus") {
