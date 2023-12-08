@@ -39,14 +39,25 @@ function BookingBox() {
 }
 
 function Booking() {
-  const [nights, setNights] = useState(1); // 숙박일수 관리
-  const [startDate, setStartDate] = useState(""); // 시작 날짜
+  const [nights, setNights] = useState(1);
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
 
   useEffect(() => {
     const today = new Date();
-    const formattedDate = today.toISOString().split("T")[0];
-    setStartDate(formattedDate);
+    const formattedToday = today.toISOString().split("T")[0];
+    setStartDate(formattedToday);
   }, []);
+
+  useEffect(() => {
+    if (startDate) {
+      const start = new Date(startDate);
+      const end = new Date(start);
+      end.setDate(start.getDate() + nights); // 숙박일수 만큼 날짜 추가
+      const formattedEndDate = end.toISOString().split("T")[0];
+      setEndDate(formattedEndDate);
+    }
+  }, [startDate, nights]);
 
   const handleCountChange = (action) => {
     if (action === "plus") {
@@ -69,7 +80,11 @@ function Booking() {
           </li>
           <li>-</li>
           <li>
-            <input type="date" />
+            <input
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+            />
           </li>
         </ul>
         <ul>
