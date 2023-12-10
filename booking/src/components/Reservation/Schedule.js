@@ -122,14 +122,12 @@ function Booking() {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
 
-  // 컴포넌트 마운트 시, 오늘 날짜를 시작 날짜로 설정
   useEffect(() => {
     const today = new Date();
     const formattedToday = today.toISOString().split("T")[0];
     setStartDate(formattedToday);
   }, []);
 
-  // 시작 날짜 또는 박 수가 변경될 때, 종료 날짜를 설정
   useEffect(() => {
     if (startDate) {
       const start = new Date(startDate);
@@ -140,7 +138,6 @@ function Booking() {
     }
   }, [startDate, nights]);
 
-  // 종료 날짜가 변경될 때, 박 수를 업데이트 함
   useEffect(() => {
     if (startDate && endDate) {
       const start = new Date(startDate);
