@@ -177,3 +177,9 @@
 .top_right h3 {
   text-align: right;
 }
+
+/* 꽉 찬 속 */
+.max_inner {
+  margin: 0 auto;
+  max-width: 700px;
+}
