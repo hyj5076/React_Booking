@@ -105,7 +105,7 @@ function Nav() {
                 <button>예약하기</button>
               </li>
               <li>
-                <button>예약확인/취소</button>
+                <button>예약확인</button>
               </li>
             </ul>
           </div>
