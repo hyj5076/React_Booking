@@ -14,7 +14,7 @@ function Monthly() {
             <Available />
 
             <div className="cal_table_month">
-              <p>달력 끌어오기!!!</p>
+              <p>달력</p>
             </div>
           </div>
         </div>
