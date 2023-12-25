@@ -178,7 +178,7 @@
   text-align: right;
 }
 
-/* 꽉 찬 속 */
+/* 꽉 찬 속 ==== 700px 제한 안 되는 오류 해결할 것 ! */
 .max_inner {
   margin: 0 auto;
   max-width: 700px;
